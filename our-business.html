@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joindo | Our Business</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body class="background-homepage">
+    <header>
+      <div class="flex justify-between container">
+        <div>
+          <a href="homepage.html">
+            <img src="temp-asset/static-asset/jeh-logo.png" class="" alt="" />
+          </a>
+        </div>
+        <div class="flex justify-between gap-10 items-center">
+          <a href="homepage.html">
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">Home</h3>
+          </a>
+          <a href="aboutus.html">
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">About Us</h3>
+          </a>
+          <a href="our-business.html">
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">Our Business</h3>
+          </a>
+          <button onclick="togglePopup(0)">
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">Contact Us</h3>
+          </button>
+          <a href="article.html">
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">Article</h3>
+          </a>
+        </div>
+        <div id="popup" class="popup hidden fixed top-0 left-0 w-full h-full z-[100]">
+          <div class="bg-white rounded-lg container fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[65%] border-4 border-l-4 border-s border-joindo-blue-navy px-16">
+            <h1 class="text-[72px] font-outfitSemiBold text-joindo-blue-navy text-center py-7">Contact Us</h1>
+            <button onclick="closePopup(0)" class="absolute top-[8%]">
+              <div class="bg-joindo-blue-navy px-2 rounded-lg">
+                <h1 class="text-white text-[28px] font-outfitRegular"><</h1>
+              </div>
+            </button>
+            <form action="" class="flex flex-col mt-7 justify-center gap-7" onsubmit="return checkForm()">
+              <input type="text" id="fname" name="firstname" placeholder="Nama.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
+              <input type="text" id="email" name="email" placeholder="Email.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
+              <input type="text" id="phone" name="phone" placeholder="No. HP.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
+              <textarea id="message" name="message" placeholder="Isi Pesan.." class="border rounded-lg pt-3 pb-24 pl-3 border-joindo-blue-navy text-joindo-blue-navy"></textarea>
+              <button>
+                <div class="flex justify-end">
+                  <h3 class="text-white bg-joindo-gray py-3 px-3 rounded-lg text-[28px] font-outfitSemiBold" id="submitButton">Submit</h3>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div id="popupTerimaKasih" class="popup hidden fixed top-0 left-0 w-full h-full z-[100]">
+          <div class="bg-white rounded-lg container fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[65%] border-4 border-l-4 border-s border-joindo-blue-navy px-16">
+            <h1 class="text-[72px] font-outfitSemiBold text-joindo-blue-navy text-center py-7">Terima Kasih!</h1>
+            <button onclick="closePopupTerimaKasih()" class="absolute top-[8%]">
+              <div class="bg-joindo-blue-navy px-2 rounded-lg">
+                <h1 class="text-white text-[28px] font-outfitRegular"><</h1>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="">
+      <div class="">
+        <div class="grid grid-rows-3 grid-cols-3 grid-flow-col justify-center w-full">
+          <div class="col-span-1">
+            <img src="temp-asset/our-business/kiri-1.svg" alt="" />
+          </div>
+          <div class="col-span-1">
+            <img src="temp-asset/our-business/kiri-2.svg" alt="" />
+          </div>
+          <div class="row-span-2 col-span-2 background-OB-kanan-1">
+            <h1>Test</h1>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-rows-3 grid-flow-col gap-4 container">
+        <div class="col-span-2">01</div>
+        <div class="col-span-2">02</div>
+        <div class="row-span-2 col-span-2">03</div>
+      </div>
+    </section>
+    <footer class="bg-joindo-blue-navy py-8">
+      <div class="container">
+        <h1 class="text-white text-shadow text-[32px] font-outfitSemiBold">PT. Joindo Eka Handal</h1>
+        <p class="text-white text-[20px] text-shadow font-outfitRegular mt-6">Amanyaak Building Loft of Pluit lt.5 <br />Jl. Pluit Selatan No.6, RT.6/RW.8, Pluit Kecamatan Penjaringan <br />Jakarta Utara, DKI Jakarta 14450</p>
+      </div>
+    </footer>
+  </body>
+  <script src="js/contact-us.js"></script>
+</html>

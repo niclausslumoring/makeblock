@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  ul {
+    @apply list-disc ml-4;
+  }
+
+  html {
+    @apply scroll-smooth text-black;
+  }
+
+  body {
+    @apply bg-white font-outfitRegular overflow-x-hidden;
+  }
+
+  section {
+    @apply md:my-[89px] my-20;
+  }
+
+  .container {
+    @apply p-4;
+  }
+
+  hr {
+    @apply md:border-2 border-[1px] border-black w-24;
+  }
+}
+
+/* Font */
+/* Font */
+@font-face {
+  font-family: "outfitBlack";
+  src: url("../outfit-cufonfonts/Outfit-Black.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
+}
+
+@font-face {
+  font-family: "outfitBold";
+  src: url("../outfit-cufonfonts/Outfit-Bold.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
+}
+
+@font-face {
+  font-family: "outfitExtraBold";
+  src: url("../outfit-cufonfonts/Outfit-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
+}
+
+@font-face {
+  font-family: "outfitExtraLight";
+  src: url("../outfit-cufonfonts/Outfit-ExtraLight.ttf") format("truetype");
+  font-weight: 200; /* This corresponds to ExtraLight font weight */
+}
+
+@font-face {
+  font-family: "outfitLight";
+  src: url("../outfit-cufonfonts/Outfit-Light.ttf") format("truetype");
+  font-weight: 300; /* This corresponds to Light font weight */
+}
+
+@font-face {
+  font-family: "outfitMedium";
+  src: url("../outfit-cufonfonts/Outfit-Medium.ttf") format("truetype");
+  font-weight: 500; /* This corresponds to Medium font weight */
+}
+
+@font-face {
+  font-family: "outfitRegular";
+  src: url("../outfit-cufonfonts/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400; /* This corresponds to Regular font weight */
+}
+
+@font-face {
+  font-family: "outfitSemiBold";
+  src: url("../outfit-cufonfonts/Outfit-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* This corresponds to Semibold font weight */
+}
+
+@font-face {
+  font-family: "outfitThin";
+  src: url("../outfit-cufonfonts/Outfit-Thin.ttf") format("truetype");
+  font-weight: 100; /* This corresponds to Thin font weight */
+}
+/* Font end */
+
+@layer utilities {
+  /* .text-stroke  {
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke-width: 12px;
+          @apply text-Black-storke
+      } */
+
+  h1 {
+    @apply 2xl:text-[40px] lg:text-3xl md:text-base text-lg;
+  }
+
+  h2 {
+    @apply lg:text-2xl md:text-xl text-sm;
+  }
+
+  h3 {
+    @apply md:text-2xl text-base;
+  }
+
+  h5 {
+    @apply md:text-base text-sm;
+  }
+
+  h6 {
+    @apply 2xl:text-base lg:text-sm text-xs;
+  }
+}
+
+/* Global */
+.pb-active {
+  @apply lg:pb-0 md:pb-[280px] pb-[230px];
+}
+
+.dropMenu-Active {
+  @apply 2xl:top-[60px] md:top-16 top-[52px] md:left-0 visible transition-all ease-in-out duration-500;
+}
+
+.nav-active > span:nth-child(1) {
+  @apply -rotate-45 bg-red-500;
+}
+
+.nav-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.navDrop-Active > svg {
+  @apply rotate-180;
+}
+
+.navDrop-Active {
+  @apply text-red-400;
+}
+
+.nav-active > span:nth-child(3) {
+  @apply rotate-45 bg-red-500;
+}
+
+.Navlink-Active {
+  @apply text-red-400;
+}
+
+.navCont-active {
+  @apply 3xl:pb-16 md:pb-16 shadow-md bg-white;
+}
+
+.language-Active > svg {
+  @apply rotate-180;
+}
+
+.languageBox-Active {
+  @apply scale-100 translate-y-12 z-50;
+}
+
+.languageBox-Active > button {
+  @apply scale-100;
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px #3e5580;
+}
+.border-shadow {
+  filter: drop-shadow(0px 0px 10px #3e5580);
+}
+/* Global End */
+
+/*Homepage css */
+.background-homepage {
+  background: linear-gradient(270deg, #3e5580 0%, #c4d8ff 100%);
+}
+.background-BU {
+  background: linear-gradient(180deg, #e9f2f8 0%, rgba(233, 242, 248, 0) 100%);
+}
+.background-article {
+  background: linear-gradient(180deg, #3e5580 0%, rgba(123, 204, 225, 0) 100%);
+}
+.background-OB-kanan-1 {
+  background: linear-gradient(90deg, #f6c500 0%, rgba(246, 197, 0, 0) 115.7%);
+}
+/*Homepage css */
+
+/* vanila css end*/
