@@ -175,6 +175,13 @@
 .burger-menu-button {
   transition: all 0.3s ease-in-out;
 }
+.button-learn-more {
+  background: linear-gradient(180deg, #c4d8ff 0%, #c4d8ff 11.46%, #3e5580 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.grid-rows-3 .row-span-1:nth-child(2) {
+  margin-top: -1px; /* Adjust this value to suit your design */
+}
 
 /* Global End */
 
@@ -191,6 +198,13 @@
 .background-OB-kanan-1 {
   background: linear-gradient(90deg, #f6c500 0%, rgba(246, 197, 0, 0) 115.7%);
 }
+.background-OB-kanan-2 {
+  background: linear-gradient(90deg, #7bcce1 -6.54%, rgba(123, 204, 225, 0) 111.26%);
+}
+.background-OB-kanan-3 {
+  background: linear-gradient(90deg, #a0ffa0 0%, rgba(160, 255, 160, 0) 113.3%);
+}
+
 /*Homepage css */
 
 /* vanila css end*/
