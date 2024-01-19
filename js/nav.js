@@ -1,83 +1,34 @@
-const navBurger = document.getElementById("navBurger");
 const navCont = document.getElementById("navCont");
-const navLinks = document.getElementById("navLinks");
-const dropdownNavs = document.querySelectorAll(".dropdownNav");
-
 const nav = document.querySelector("header");
-
-// Language
-const languages = document.querySelectorAll(".language");
-const languageBoxes = document.querySelectorAll(".languageBox");
-const languageSelector = document.querySelector(".language img"); // Menggunakan selektor yang benar untuk gambar bahasa
-const defaultLanguageButton = document.querySelector(".languageBox a[data-lang='ID']"); // Menemukan tombol bahasa default (ID)
-
-// const NavlinkTreatmentActions = document.querySelectorAll(".NavlinkTreatment-Actions");
-// const NavlinkActions = document.querySelectorAll(".Navlink-Actions");
 
 // Navlink Active Navbar
 const pathName = window.location.pathname;
 const pageName = pathName.split("/").pop();
 // Navlink
-if (pageName === "solution.html") {
-  document.querySelectorAll(".Solution").forEach(function (element) {
+if (pageName === "article.html") {
+  document.querySelectorAll(".articleActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
 
-if (pageName === "about-us.html") {
-  document.querySelectorAll(".TentangZAP").forEach(function (element) {
+if (pageName === "aboutus.html") {
+  document.querySelectorAll(".aboutActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
 
-if (pageName === "lokasi.html") {
-  document.querySelectorAll(".Lokasi").forEach(function (element) {
+if (pageName === "our-business.html") {
+  document.querySelectorAll(".ourActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
 
-
-if (pageName === "artikel.html") {
-  document.querySelectorAll(".Artikel").forEach(function (element) {
+if (pageName === "index.html") {
+  document.querySelectorAll(".homeActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
 
-if (pageName === "artikel-detail.html") {
-  document.querySelectorAll(".Artikel").forEach(function (element) {
-    element.classList.add("Navlink-Active");
-  });
-}
-
-if (pageName === "store.html" || pageName === "store-itemDetails.html") {
-  document.querySelectorAll(".EStore").forEach(function (element) {
-    element.classList.add("Navlink-Active");
-  });
-}
-
-if (pageName === "fulldetails.html") {
-  document.querySelectorAll(".Treatment").forEach(function (element) {
-    element.classList.add("Navlink-Active");
-  });
-}
-
-if (pageName === "promo.html") {
-  document.querySelectorAll(".Promo").forEach(function (element) {
-    element.classList.add("Navlink-Active");
-  });
-}
-
-if (pageName === "membership.html") {
-  document.querySelectorAll(".Promo").forEach(function (element) {
-    element.classList.add("Navlink-Active");
-  });
-}
-
-if (pageName === "series.html") {
-  document.querySelectorAll(".Promo").forEach(function (element) {
-    element.classList.add("Navlink-Active");
-  });
-}
 // Navlink end
 
 // Navlink Active Navbar End

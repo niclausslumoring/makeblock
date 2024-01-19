@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body class="background-homepage">
-    <header>
+    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
       <div class="flex justify-between container">
         <div>
           <a href="index.html">
-            <img src="temp-asset/static-asset/jeh-logo.png" class="" alt="" />
+            <img src="temp-asset/static-asset/jeh-logo.png" alt="" />
           </a>
         </div>
         <div class="sm:flex hidden justify-between gap-10 items-center">
           <a href="index.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">Home</h3>
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold homeActive">Home</h3>
           </a>
           <a href="aboutus.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">About Us</h3>
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold aboutActive">About Us</h3>
           </a>
           <a href="our-business.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">Our Business</h3>
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold ourActive">Our Business</h3>
           </a>
           <button onclick="togglePopup(0)">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">Contact Us</h3>
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold contactActive">Contact Us</h3>
           </button>
           <a href="article.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow">Article</h3>
+            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold articleActive">Article</h3>
           </a>
         </div>
         <!-- Tambahkan id pada tombol burger -->
@@ -107,5 +107,5 @@
     </footer>
   </body>
   <script src="js/contact-us.js"></script>
-  <script src="js/header.js"></script>
+  <script src="js/nav.js"></script>
 </html>

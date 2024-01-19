@@ -118,53 +118,18 @@
 }
 
 /* Global */
-.pb-active {
-  @apply lg:pb-0 md:pb-[280px] pb-[230px];
-}
-
-.dropMenu-Active {
-  @apply 2xl:top-[60px] md:top-16 top-[52px] md:left-0 visible transition-all ease-in-out duration-500;
-}
-
-.nav-active > span:nth-child(1) {
-  @apply -rotate-45 bg-red-500;
-}
-
-.nav-active > span:nth-child(2) {
-  @apply scale-0;
-}
-
-.navDrop-Active > svg {
-  @apply rotate-180;
-}
-
-.navDrop-Active {
-  @apply text-red-400;
-}
-
-.nav-active > span:nth-child(3) {
-  @apply rotate-45 bg-red-500;
-}
 
 .Navlink-Active {
-  @apply text-red-400;
+  @apply font-outfitSemiBold;
 }
 
-.navCont-active {
-  @apply 3xl:pb-16 md:pb-16 shadow-md bg-white;
+.nav-bg-Gradient {
+  background: linear-gradient(270deg, #3e5580 0%, #c4d8ff 100%);
+}
+.nav-bg-Article {
+  background: linear-gradient(180deg, #3e5580 0%, rgba(123, 204, 225, 0) 100%);
 }
 
-.language-Active > svg {
-  @apply rotate-180;
-}
-
-.languageBox-Active {
-  @apply scale-100 translate-y-12 z-50;
-}
-
-.languageBox-Active > button {
-  @apply scale-100;
-}
 .text-shadow {
   text-shadow: 2px 2px 4px #3e5580;
 }
@@ -182,7 +147,10 @@
 .grid-rows-3 .row-span-1:nth-child(2) {
   margin-top: -1px; /* Adjust this value to suit your design */
 }
-
+.burger-menu-popup {
+  background-image: url("temp-asset\homepage\bg-tangan.svg");
+  background-size: cover;
+}
 /* Global End */
 
 /*Homepage css */
