@@ -9,8 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "homepage-banner": "url('../temp-asset/homepage/bg-homepage-1.png')",
-        "onlineBookGreen-bg": "url('../temp-asset/homepage/Booking-1.png')",
-        "onlineBookPink-bg": "url('../temp-asset/homepage/Booking-2.png')",
+        "about-us-banner": "url('../temp-asset/about-us/banner.svg')",
       },
 
       fontFamily: {

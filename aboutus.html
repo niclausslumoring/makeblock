@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body class="">
-    <header id="navCont" class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
-      <div class="flex justify-between container">
-        <div>
+    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
+      <div class="flex justify-between container items-center">
+        <div class="flex items-center justify-center">
           <img src="temp-asset/static-asset/cyberspace-logo.svg" alt="" />
         </div>
-        <div class="flex gap-10">
+        <div class="flex gap-10 items-center justify-center">
           <a href="index.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
           <a href="aboutus.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold aboutActive">About Us</h1> </a>
           <a href="course.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold courseActive">Course</h1></a>
@@ -21,7 +21,40 @@
         </div>
       </div>
     </header>
-    <h1 class="font-poppinsSemiBold text-emerald-300">Test</h1>
+    <section class="about__banner" style="margin-block: 0 !important">
+      <div class="bg-about-us-banner bg-cover h-[480px] flex pt-[110px] justify-center">
+        <h1 class="text-white text-shadow text-[64px] font-poppinsSemiBold text-center">About Us</h1>
+      </div>
+    </section>
+    <section class="cyber__academy" style="margin-block: 0 !important">
+      <div class="lingkaran-oren h-[480px]">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-center text-white text-[40px] font-poppinsSemiBold text-shadow">Cyberspace Academy</h1>
+          <h3>Founded in 2021, Cyberspace has quickly grown to be a leading coding program with Makeblock</h3>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-cyberspace-orange pt-32 rounded-t-[50px] pb-16">
+        <div class="container flex justify-between">
+          <div>
+            <div><img src="temp-asset/static-asset/cyberspace-kecil-logo.png" alt="" /></div>
+            <h3 class="text-[12px] text-white text-shadow font-poppinsRegular">Empowering Futures & Transforming Technology</h3>
+            <div class="flex">
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+              <img src="temp-asset/static-asset/linkedin.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col justify-end items-end text-end">
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">
+              Amanyaak Building lt.5 <br />
+              Jln. Pluit Selatan No.5-6, Penjaringan, Jakarta Utara
+            </h3>
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">atikah@cyberspaceedu.com</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="js/contact-us.js"></script>
   <script src="js/header.js"></script>
