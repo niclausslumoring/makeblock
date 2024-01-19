@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         "homepage-banner": "url('../temp-asset/homepage/bg-homepage-1.png')",
         "about-us-banner": "url('../temp-asset/about-us/banner.svg')",
+        "course-banner": "url('../temp-asset/course/banner.svg')",
       },
 
       fontFamily: {
@@ -35,6 +36,7 @@ module.exports = {
         "cyberspace-light-blue": "#48B5AA",
         "cyberspace-purple": "#747FC6",
         "cyberspace-red": "#FF6D59",
+        "cyberspace-gray": "#CECECE",
       },
       screens: {
         xl: "1200px",
