@@ -8,26 +8,34 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        "offcanvas-bg": "url('../temp-asset/statis-asset/Navbar.png')",
+        "homepage-banner": "url('../temp-asset/homepage/bg-homepage-1.png')",
         "onlineBookGreen-bg": "url('../temp-asset/homepage/Booking-1.png')",
         "onlineBookPink-bg": "url('../temp-asset/homepage/Booking-2.png')",
       },
 
       fontFamily: {
-        outfitThin: ["outfitThin"],
-        outfitSemiBold: ["outfitSemiBold"],
-        outfitRegular: ["outfitRegular"],
-        outfitMedium: ["outfitMedium"],
-        outfitLight: ["outfitLight"],
-        outfitExtraLight: ["outfitExtraLight"],
-        outfitExtraBold: ["outfitExtraBold"],
-        outfitBold: ["outfitBold"],
-        outfitBlack: ["outfitBlack"],
+        poppinsThin: ["poppinsThin"],
+        poppinsSemiBold: ["poppinsSemiBold"],
+        poppinsRegular: ["poppinsRegular"],
+        poppinsMedium: ["poppinsMedium"],
+        poppinsLight: ["poppinsLight"],
+        poppinsExtraLight: ["poppinsExtraLight"],
+        poppinsExtraBold: ["poppinsExtraBold"],
+        poppinsBold: ["poppinsBold"],
+        poppinsBlack: ["poppinsBlack"],
       },
 
       colors: {
-        "joindo-blue-navy": "#3E5580",
-        "joindo-gray": "#888888",
+        "cyberspace-orange": "#FF9900",
+        "cyberspace-dark-orange": "#E7B200",
+        "cyberspace-light-orange": "#FFB800",
+        "cyberspace-super-light-orange": "#FFC604",
+        "cyberspace-blue": "#1D77FF",
+        "cyberspace-green": "#2C5F2D",
+        "cyberspace-brown": "#B66D21",
+        "cyberspace-light-blue": "#48B5AA",
+        "cyberspace-purple": "#747FC6",
+        "cyberspace-red": "#FF6D59",
       },
       screens: {
         xl: "1200px",

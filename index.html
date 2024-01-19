@@ -3,167 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joindo | Homepage</title>
+    <title>Cyberspace | Homepage</title>
     <link rel="stylesheet" href="css/output.css" />
   </head>
-  <body class="background-homepage">
+  <body class="">
     <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
-      <div class="flex justify-between container">
-        <div>
-          <a href="index.html">
-            <img src="temp-asset/static-asset/jeh-logo.png" alt="" />
-          </a>
+      <div class="flex justify-between container items-center">
+        <div class="flex items-center justify-center">
+          <img src="temp-asset/static-asset/cyberspace-logo.svg" alt="" />
         </div>
-        <div class="sm:flex hidden justify-between gap-10 items-center">
-          <a href="index.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold homeActive">Home</h3>
-          </a>
-          <a href="aboutus.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold aboutActive">About Us</h3>
-          </a>
-          <a href="our-business.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold ourActive">Our Business</h3>
-          </a>
-          <button onclick="togglePopup(0)">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold contactActive">Contact Us</h3>
-          </button>
-          <a href="article.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold articleActive">Article</h3>
-          </a>
-        </div>
-        <!-- Tambahkan id pada tombol burger -->
-        <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
-          <span class="w-9 h-1 rounded-full bg-white transition-all origin-top-right ease-in-out duration-300"></span>
-          <span class="w-9 h-1 rounded-full bg-white transition-all ease-in-out duration-300"></span>
-          <span class="w-9 h-1 rounded-full bg-white transition-all origin-bottom-right ease-in-out duration-300"></span>
-        </button>
-
-        <button class="hidden burger-menu-close z-[120]" onclick="closeBurgerPopup()">
-          <div>
-            <img src="temp-asset/static-asset/close.svg" class="w-12" alt="" />
-          </div>
-        </button>
-
-        <div class="burger-menu-popup hidden w-full fixed h-full top-0 right-0 z-[100]" id="popupBurger">
-          <div class="flex flex-col bg-transparent absolute top-0 w-full justify-start items-start container h-full gap-12 py-12">
-            <a href="index.html">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow">Home</h3>
-            </a>
-            <a href="aboutus.html">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow">About Us</h3>
-            </a>
-            <a href="our-business.html">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow">Our Business</h3>
-            </a>
-            <button onclick="togglePopup(0)">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow text-left">Contact Us</h3>
-            </button>
-            <a href="article.html">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow">Article</h3>
-            </a>
-          </div>
-        </div>
-
-        <div id="popup" class="popup hidden fixed top-0 left-0 w-full h-full z-[100]">
-          <div class="bg-white rounded-lg container fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[65%] border-4 border-l-4 border-s border-joindo-blue-navy px-16">
-            <h1 class="text-[72px] font-outfitSemiBold text-joindo-blue-navy text-center py-7">Contact Us</h1>
-            <button onclick="closePopup(0)" class="absolute top-[8%]">
-              <div class="bg-joindo-blue-navy px-2 rounded-lg">
-                <h1 class="text-white text-[28px] font-outfitRegular"><</h1>
-              </div>
-            </button>
-            <form action="" class="flex flex-col mt-7 justify-center gap-7" onsubmit="return checkForm()">
-              <input type="text" id="fname" name="firstname" placeholder="Nama.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
-              <input type="text" id="email" name="email" placeholder="Email.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
-              <input type="text" id="phone" name="phone" placeholder="No. HP.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
-              <textarea id="message" name="message" placeholder="Isi Pesan.." class="border rounded-lg pt-3 pb-24 pl-3 border-joindo-blue-navy text-joindo-blue-navy"></textarea>
-              <button>
-                <div class="flex justify-end">
-                  <h3 class="text-white bg-joindo-gray py-3 px-3 rounded-lg text-[28px] font-outfitSemiBold" id="submitButton">Submit</h3>
-                </div>
-              </button>
-            </form>
-          </div>
-        </div>
-        <div id="popupTerimaKasih" class="popup hidden fixed top-0 left-0 w-full h-full z-[100]">
-          <div class="bg-white rounded-lg container fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[65%] border-4 border-l-4 border-s border-joindo-blue-navy px-16">
-            <h1 class="text-[72px] font-outfitSemiBold text-joindo-blue-navy text-center py-7">Terima Kasih!</h1>
-            <h3 class="text-[20px] font-outfitRegular text-joindo-blue-navy">Your message has been submited!</h3>
-            <button onclick="closePopupTerimaKasih()" class="absolute top-[8%]">
-              <div class="bg-joindo-blue-navy px-2 rounded-lg">
-                <h1 class="text-white text-[28px] font-outfitRegular"><</h1>
-              </div>
-            </button>
-          </div>
+        <div class="flex gap-10 items-center justify-center">
+          <a href="index.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
+          <a href="aboutus.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold aboutActive">About Us</h1> </a>
+          <a href="course.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold courseActive">Course</h1></a>
+          <a href="partnership.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold partnershipActive">Partnership</h1></a>
+          <a href="faq.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold faqActive">FAQ</h1></a>
         </div>
       </div>
     </header>
-    <section class="home__banner sm:pb-32 pb-20">
-      <div class="container relative">
-        <div class="flex flex-col">
-          <h1 class="font-outfitSemiBold text-white sm:text-[72px] text-[54px] sm:leading-none leading-tight text-shadow">PT. Joindo Eka Handal</h1>
-          <p class="text-white font-outfitSemiBold sm:text-[24px] text-[20px] my-6 sm:w-[40%] w-full">
-            Welcome to <span class="text-joindo-blue-navy">PT. Joindo Eka Handal</span>, your trusted partner in innovation and education. We are dedicated to shaping the future of learning through our commitment to excellence and passion for educational advancement.
-          </p>
-          <a href="aboutus.html">
-            <h3 class="text-joindo-blue-navy font-outfitSemiBold sm:text-[24px] text-[20px]">Read more ></h3>
-          </a>
-        </div>
-        <div class="absolute -right-[108px] top-0">
-          <img src="temp-asset/homepage/bg-tangan.svg" class="sm:block hidden" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="home__business__unit background-BU sm:pt-32 pt-8">
-      <div class="container flex sm:flex-row flex-col gap-[37px]">
-        <div class="sm:w-1/2 w-full">
-          <div class="flex-col">
-            <h1 class="font-outfitSemiBold text-joindo-blue-navy sm:text-[72px] text-[54px] sm:leading-none leading-tight text-shadow sm:text-left text-center">Our Business Unit</h1>
-            <p class="text-joindo-blue-navy text-[20px] font-outfitRegular sm:mt-10 mt-4 sm:text-left text-center">Our programs are a fusion of technology, creativity, and physical wellness, providing students with a diverse set of skills that will propel them into the future.</p>
+    <section class="home__banner mt-32">
+      <div class="bg-homepage-banner h-[480px] justify-center items-center flex text-center">
+        <div class="flex-col gap-4 flex">
+          <div>
+            <h1 class="text-white text-shadow font-poppinsSemiBold text-[64px]">#bestinclass</h1>
           </div>
-          <div class="border border-shadow flex justify-center items-center flex-col px-8 bg-white mt-12 rounded-lg pb-[110px] pt-6">
-            <img src="temp-asset/static-asset/tetra-logo.png" alt="" />
-            <h1 class="text-joindo-blue-navy font-outfitSemiBold text-[28px] sm:text-left text-center">PT. Taman Teknologi Nusantara</h1>
-            <p class="text-joindo-blue-navy font-outfitRegular text-[20px] mt-6 text-center">
-              Makeblock program offers students an immersive experience in the realms of Science, Technology, Engineering, Arts, and Mathematics (STEAM). Through hands-on projects, students delve into the fascinating world of robotics, coding, and STEAM education.
-            </p>
-            <p class="text-joindo-blue-navy font-outfitRegular text-[20px] mt-6 text-center">
-              Apart from selling products, we alseo have a robotic competition program. Make X is an exciting program designed to ignite students' passion for coding and robotics. Participants will have the opportunity to engage in thrilling robot competitions, putting their skills and creativity to
-              the test.
-            </p>
-            <div class="rounded-lg bg-joindo-blue-navy px-[39px] py-[14px] mt-20">
-              <h3 class="text-white font-outfitSemiBold text-[20px]">Learn More</h3>
-            </div>
+          <div class="bg-cyberspace-light-orange rounded-lg">
+            <h3 class="text-white font-poppinsRegular text-[16px]">Empowering Futures & Transforming Technology</h3>
           </div>
-        </div>
-        <div class="sm:w-1/2 w-full flex flex-col gap-[39px]">
-          <div class="border border-shadow flex justify-center items-center flex-col px-8 bg-white rounded-lg pb-[55px] pt-6">
-            <img src="temp-asset/static-asset/lit-logo.png" alt="" />
-            <h1 class="text-joindo-blue-navy font-outfitSemiBold text-[28px] sm:text-left text-center">PT. Lab Inovasi Teknologi</h1>
-            <p class="text-joindo-blue-navy font-outfitRegular text-[20px] mt-6 text-center">
-              Cyberspace Academy, we go beyond conventional education, offering a holistic approach to STEAM learningspecifically tailored for enrichment classes, after-school activities, and extracurricular engagements.
-            </p>
-
-            <div class="rounded-lg bg-joindo-blue-navy px-[39px] py-[14px] mt-[37px]">
-              <h3 class="text-white font-outfitSemiBold text-[20px]">Learn More</h3>
-            </div>
-          </div>
-          <div class="border border-shadow flex justify-center items-center flex-col px-8 bg-white rounded-lg pb-[55px] pt-6">
-            <img src="temp-asset/static-asset/xtart-logo.png" class="w-[148px] h-[108px] object-cover" alt="" />
-            <h1 class="text-joindo-blue-navy font-outfitSemiBold text-[28px]">XTart</h1>
-            <p class="text-joindo-blue-navy font-outfitRegular text-[20px] mt-6 text-center">We offer a variety of laser engravers and cutters with diverse features, ensuring that there is always a suitable option to fulfill your requirements for laser-based creations</p>
-
-            <div class="rounded-lg bg-joindo-blue-navy px-[39px] py-[14px] mt-[37px]">
-              <h3 class="text-white font-outfitSemiBold text-[20px]">Learn More</h3>
-            </div>
+          <div class="justify-center items-center flex mt-10">
+            <button class="w-1/2 signup-button">
+              <h3 class="text-white font-poppinsBold text-[20px] py-2">Sign Up Now</h3>
+            </button>
           </div>
         </div>
       </div>
     </section>
-    <footer class="bg-joindo-blue-navy py-8">
-      <div class="container">
-        <h1 class="text-white text-shadow sm:text-[32px] text-[28px] font-outfitSemiBold sm:text-left text-center">PT. Joindo Eka Handal</h1>
-        <p class="text-white sm:text-[20px] text-[16px] text-shadow font-outfitRegular mt-6 sm:text-left text-center sm:px-0 px-1">Amanyaak Building Loft of Pluit lt.5 <br />Jl. Pluit Selatan No.6, RT.6/RW.8, Pluit Kecamatan Penjaringan <br />Jakarta Utara, DKI Jakarta 14450</p>
+    <section class="why__learn">
+      <div class="flex justify-between">
+        <div>
+          <img src="temp-asset/homepage/why-kiri.png" alt="" />
+        </div>
+        <div class="flex items-center flex-col">
+          <h1 class="text-cyberspace-dark-orange font-poppinsSemiBold text-[40px]">Why Learn with Cyberspace</h1>
+          <div class="flex gap-28 mt-10">
+            <div class="flex items-center flex-col w-[250px]">
+              <img src="temp-asset/homepage/isi-1.svg" alt="" />
+              <h3 class="mt-2 text-cyberspace-super-light-orange font-poppinsMedium text-center text-[16px]">A local STEAM education hub and the world's Leading STEAM provider, Makeblock</h3>
+            </div>
+            <div class="flex items-center flex-col w-[250px]">
+              <img src="temp-asset/homepage/isi-2.svg" alt="" />
+              <h3 class="mt-2 text-cyberspace-super-light-orange font-poppinsMedium text-center text-[16px]">Learn Through Play and Foster Logical Thinking</h3>
+            </div>
+            <div class="flex items-center flex-col w-[250px]">
+              <img src="temp-asset/homepage/isi-3.svg" alt="" />
+              <h3 class="mt-2 text-cyberspace-super-light-orange font-poppinsMedium text-center text-[16px]">21st Century Skills development</h3>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="temp-asset/homepage/why-kanan.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="steam steam-box">
+      <div class="flex flex-col items-center justify-center text-center container">
+        <h1 class="text-black text-[32px] font-poppinsSemiBold">Coding Helps Build Technology Which Makes Our Lives Convenient</h1>
+        <h3 class="text-black text-[18px] font-poppinsRegular w-[80%] mt-6">Coding is an important skill set of the modern world. It gives students an exposure to the technology they use every day, better job and career opportunities in future and enhance some of the most important skills</h3>
+        <div class="flex mt-14 gap-14">
+          <div class="flex flex-col gap-7 w-[120px] items-center justify-center">
+            <img src="temp-asset/homepage/s.svg" alt="" />
+            <h3 class="text-[20px] uppercase font-poppinsSemiBold text-center text-cyberspace-green">science</h3>
+          </div>
+          <div class="flex flex-col gap-7 w-[120px] items-center justify-center">
+            <img src="temp-asset/homepage/t.svg" alt="" />
+            <h3 class="text-[20px] uppercase font-poppinsSemiBold text-center text-cyberspace-brown">technology</h3>
+          </div>
+          <div class="flex flex-col gap-7 w-[120px] items-center justify-center">
+            <img src="temp-asset/homepage/e.svg" alt="" />
+            <h3 class="text-[20px] uppercase font-poppinsSemiBold text-center text-cyberspace-light-blue">engineering</h3>
+          </div>
+          <div class="flex flex-col gap-7 w-[120px] items-center justify-center">
+            <img src="temp-asset/homepage/a.svg" alt="" />
+            <h3 class="text-[20px] uppercase font-poppinsSemiBold text-center text-cyberspace-purple">art</h3>
+          </div>
+          <div class="flex flex-col gap-7 w-[120px] items-center justify-center">
+            <img src="temp-asset/homepage/m.svg" alt="" />
+            <h3 class="text-[20px] uppercase font-poppinsSemiBold text-center text-cyberspace-red">mathematics</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our__programs">
+      <div class="container flex flex-col">
+        <h1 class="text-[40px] font-poppinsSemiBold text-cyberspace-orange text-center">Our Programs</h1>
+        <div class="flex justify-between items-center mt-10 gap-[54px] relative">
+          <div class="border border-s program-box p-3 flex flex-col justify-center items-center">
+            <img src="temp-asset/homepage/mtiny.png" class="w-full" alt="" />
+            <a href="" class="flex items-center justify-center mt-10 mb-6">
+              <div class="program-detail-box w-fit">
+                <h3 class="text-white text-[24px] font-poppinsSemiBold py-1 px-3 text-center">MTiny</h3>
+              </div>
+            </a>
+
+            <h3 class="text-black text-[16px] pb-14 w-[225px] font-poppinsRegular text-center">Enveloping early literacy and numeracy through screen-free, tangible programming introduces the youngest of students</h3>
+          </div>
+          <div class="border border-s program-box p-3 flex flex-col justify-center items-center">
+            <img src="temp-asset/homepage/codey.png" alt="" class="w-full" />
+            <a href="" class="flex items-center justify-center mt-10 mb-6">
+              <div class="program-detail-box w-fit">
+                <h3 class="text-white text-[24px] font-poppinsSemiBold py-1 px-3 text-center">Codey Rockey</h3>
+              </div>
+            </a>
+            <h3 class="text-black text-[16px] pb-14 w-[225px] font-poppinsRegular text-center">Easy to use robotics and block-based programming software makes programming as simple as assembling building blocks.</h3>
+          </div>
+          <div class="border border-s program-box p-3 flex flex-col justify-center items-center">
+            <img src="temp-asset/homepage/mbot-2.png" alt="" class="w-full" />
+            <a href="" class="flex items-center justify-center mt-10 mb-6">
+              <div class="program-detail-box w-fit">
+                <h3 class="text-white text-[24px] font-poppinsSemiBold py-1 px-3 text-center">Mbot 2</h3>
+              </div>
+            </a>
+            <h3 class="text-black text-[16px] pb-14 w-[225px] font-poppinsRegular text-center">Immersive platform designed to introduce upper primary school students to robotics and programming</h3>
+          </div>
+          <div class="absolute left-0 -translate-x-1/2 top-1/2 transform -translate-y-1/2">
+            <img src="temp-asset/homepage/buku.svg" alt="" />
+          </div>
+          <div class="absolute -bottom-[25%] -right-[10%]">
+            <img src="temp-asset/homepage/buku-kanan.svg" alt="" />
+          </div>
+          <div class="absolute -top-[20%] -right-[10%]">
+            <img src="temp-asset/homepage/lonceng.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-cyberspace-orange pt-32 rounded-t-[50px] pb-16">
+        <div class="container flex justify-between">
+          <div>
+            <div><img src="temp-asset/static-asset/cyberspace-kecil-logo.png" alt="" /></div>
+            <h3 class="text-[12px] text-white text-shadow font-poppinsRegular">Empowering Futures & Transforming Technology</h3>
+            <div class="flex">
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+              <img src="temp-asset/static-asset/linkedin.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col justify-end items-end text-end">
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">
+              Amanyaak Building lt.5 <br />
+              Jln. Pluit Selatan No.5-6, Penjaringan, Jakarta Utara
+            </h3>
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">atikah@cyberspaceedu.com</h3>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

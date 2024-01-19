@@ -3,109 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joindo | About Us</title>
+    <title>Cyberspace | Homepage</title>
     <link rel="stylesheet" href="css/output.css" />
   </head>
-  <body class="background-homepage">
-    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
+  <body class="">
+    <header id="navCont" class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
       <div class="flex justify-between container">
         <div>
-          <a href="index.html">
-            <img src="temp-asset/static-asset/jeh-logo.png" alt="" />
-          </a>
+          <img src="temp-asset/static-asset/cyberspace-logo.svg" alt="" />
         </div>
-        <div class="sm:flex hidden justify-between gap-10 items-center">
-          <a href="index.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold homeActive">Home</h3>
-          </a>
-          <a href="aboutus.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold aboutActive">About Us</h3>
-          </a>
-          <a href="our-business.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold ourActive">Our Business</h3>
-          </a>
-          <button onclick="togglePopup(0)">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold contactActive">Contact Us</h3>
-          </button>
-          <a href="article.html">
-            <h3 class="font-outfitRegular text-white text-[20px] text-shadow hover:font-outfitSemiBold articleActive">Article</h3>
-          </a>
-        </div>
-        <!-- Tambahkan id pada tombol burger -->
-        <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
-          <span class="w-9 h-1 rounded-full bg-white transition-all origin-top-right ease-in-out duration-300"></span>
-          <span class="w-9 h-1 rounded-full bg-white transition-all ease-in-out duration-300"></span>
-          <span class="w-9 h-1 rounded-full bg-white transition-all origin-bottom-right ease-in-out duration-300"></span>
-        </button>
-
-        <button class="hidden burger-menu-close z-[120]" onclick="closeBurgerPopup()">
-          <div>
-            <img src="temp-asset/static-asset/close.svg" class="w-12" alt="" />
-          </div>
-        </button>
-
-        <div class="burger-menu-popup hidden w-full fixed h-full top-0 right-0 z-[100]" id="popupBurger">
-          <div class="flex flex-col bg-transparent absolute top-0 w-full justify-start items-start container h-full gap-12 py-12">
-            <a href="index.html">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow">Home</h3>
-            </a>
-            <a href="aboutus.html">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow">About Us</h3>
-            </a>
-            <a href="our-business.html">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow">Our Business</h3>
-            </a>
-            <button onclick="togglePopup(0)">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow text-left">Contact Us</h3>
-            </button>
-            <a href="article.html">
-              <h3 class="font-outfitRegular text-white text-[24px] bg-joindo-blue-navy text-shadow">Article</h3>
-            </a>
-          </div>
-        </div>
-
-        <div id="popup" class="popup hidden fixed top-0 left-0 w-full h-full z-[100]">
-          <div class="bg-white rounded-lg container fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[65%] border-4 border-l-4 border-s border-joindo-blue-navy px-16">
-            <h1 class="text-[72px] font-outfitSemiBold text-joindo-blue-navy text-center py-7">Contact Us</h1>
-            <button onclick="closePopup(0)" class="absolute top-[8%]">
-              <div class="bg-joindo-blue-navy px-2 rounded-lg">
-                <h1 class="text-white text-[28px] font-outfitRegular"><</h1>
-              </div>
-            </button>
-            <form action="" class="flex flex-col mt-7 justify-center gap-7" onsubmit="return checkForm()">
-              <input type="text" id="fname" name="firstname" placeholder="Nama.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
-              <input type="text" id="email" name="email" placeholder="Email.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
-              <input type="text" id="phone" name="phone" placeholder="No. HP.." class="border rounded-lg py-3 pl-3 border-joindo-blue-navy text-joindo-blue-navy" />
-              <textarea id="message" name="message" placeholder="Isi Pesan.." class="border rounded-lg pt-3 pb-24 pl-3 border-joindo-blue-navy text-joindo-blue-navy"></textarea>
-              <button>
-                <div class="flex justify-end">
-                  <h3 class="text-white bg-joindo-gray py-3 px-3 rounded-lg text-[28px] font-outfitSemiBold" id="submitButton">Submit</h3>
-                </div>
-              </button>
-            </form>
-          </div>
-        </div>
-        <div id="popupTerimaKasih" class="popup hidden fixed top-0 left-0 w-full h-full z-[100]">
-          <div class="bg-white rounded-lg container fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[65%] border-4 border-l-4 border-s border-joindo-blue-navy px-16">
-            <h1 class="text-[72px] font-outfitSemiBold text-joindo-blue-navy text-center py-7">Terima Kasih!</h1>
-            <h3 class="text-[20px] font-outfitRegular text-joindo-blue-navy">Your message has been submited!</h3>
-            <button onclick="closePopupTerimaKasih()" class="absolute top-[8%]">
-              <div class="bg-joindo-blue-navy px-2 rounded-lg">
-                <h1 class="text-white text-[28px] font-outfitRegular"><</h1>
-              </div>
-            </button>
-          </div>
+        <div class="flex gap-10">
+          <a href="index.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
+          <a href="aboutus.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold aboutActive">About Us</h1> </a>
+          <a href="course.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold courseActive">Course</h1></a>
+          <a href="partnership.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold partnershipActive">Partnership</h1></a>
+          <a href="faq.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold faqActive">FAQ</h1></a>
         </div>
       </div>
     </header>
-
-    <footer class="bg-joindo-blue-navy py-8">
-      <div class="container">
-        <h1 class="text-white text-shadow sm:text-[32px] text-[28px] font-outfitSemiBold sm:text-left text-center">PT. Joindo Eka Handal</h1>
-        <p class="text-white sm:text-[20px] text-[16px] text-shadow font-outfitRegular mt-6 sm:text-left text-center sm:px-0 px-1">Amanyaak Building Loft of Pluit lt.5 <br />Jl. Pluit Selatan No.6, RT.6/RW.8, Pluit Kecamatan Penjaringan <br />Jakarta Utara, DKI Jakarta 14450</p>
-      </div>
-    </footer>
+    <h1 class="font-poppinsSemiBold text-emerald-300">Test</h1>
   </body>
   <script src="js/contact-us.js"></script>
+  <script src="js/header.js"></script>
   <script src="js/nav.js"></script>
 </html>

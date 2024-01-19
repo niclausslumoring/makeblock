@@ -5,8 +5,8 @@ const nav = document.querySelector("header");
 const pathName = window.location.pathname;
 const pageName = pathName.split("/").pop();
 // Navlink
-if (pageName === "article.html") {
-  document.querySelectorAll(".articleActive").forEach(function (element) {
+if (pageName === "faq.html") {
+  document.querySelectorAll(".faqActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
@@ -17,8 +17,8 @@ if (pageName === "aboutus.html") {
   });
 }
 
-if (pageName === "our-business.html") {
-  document.querySelectorAll(".ourActive").forEach(function (element) {
+if (pageName === "course.html") {
+  document.querySelectorAll(".courseActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
@@ -28,7 +28,11 @@ if (pageName === "index.html") {
     element.classList.add("Navlink-Active");
   });
 }
-
+if (pageName === "partnership.html") {
+  document.querySelectorAll(".partnershipActive").forEach(function (element) {
+    element.classList.add("Navlink-Active");
+  });
+}
 // Navlink end
 
 // Navlink Active Navbar End

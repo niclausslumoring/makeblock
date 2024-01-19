@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply bg-white font-outfitRegular overflow-x-hidden;
+    @apply bg-white font-poppinsRegular overflow-x-hidden;
   }
 
   section {
@@ -35,56 +35,56 @@
 /* Font */
 /* Font */
 @font-face {
-  font-family: "outfitBlack";
-  src: url("../outfit-cufonfonts/Outfit-Black.ttf") format("truetype");
+  font-family: "poppinsBlack";
+  src: url("../poppins-cufonfonts/Poppins-Black.ttf") format("truetype");
   font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
-  font-family: "outfitBold";
-  src: url("../outfit-cufonfonts/Outfit-Bold.ttf") format("truetype");
+  font-family: "poppinsBold";
+  src: url("../poppins-cufonfonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
-  font-family: "outfitExtraBold";
-  src: url("../outfit-cufonfonts/Outfit-ExtraBold.ttf") format("truetype");
+  font-family: "poppinsExtraBold";
+  src: url("../poppins-cufonfonts/Poppins-ExtraBold.ttf") format("truetype");
   font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
-  font-family: "outfitExtraLight";
-  src: url("../outfit-cufonfonts/Outfit-ExtraLight.ttf") format("truetype");
+  font-family: "poppinsExtraLight";
+  src: url("../poppins-cufonfonts/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200; /* This corresponds to ExtraLight font weight */
 }
 
 @font-face {
-  font-family: "outfitLight";
-  src: url("../outfit-cufonfonts/Outfit-Light.ttf") format("truetype");
+  font-family: "poppinsLight";
+  src: url("../poppins-cufonfonts/Poppins-Light.ttf") format("truetype");
   font-weight: 300; /* This corresponds to Light font weight */
 }
 
 @font-face {
-  font-family: "outfitMedium";
-  src: url("../outfit-cufonfonts/Outfit-Medium.ttf") format("truetype");
+  font-family: "poppinsMedium";
+  src: url("../poppins-cufonfonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500; /* This corresponds to Medium font weight */
 }
 
 @font-face {
-  font-family: "outfitRegular";
-  src: url("../outfit-cufonfonts/Outfit-Regular.ttf") format("truetype");
+  font-family: "poppinsRegular";
+  src: url("../poppins-cufonfonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400; /* This corresponds to Regular font weight */
 }
 
 @font-face {
-  font-family: "outfitSemiBold";
-  src: url("../outfit-cufonfonts/Outfit-SemiBold.ttf") format("truetype");
+  font-family: "poppinsSemiBold";
+  src: url("../poppins-cufonfonts/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600; /* This corresponds to Semibold font weight */
 }
 
 @font-face {
-  font-family: "outfitThin";
-  src: url("../outfit-cufonfonts/Outfit-Thin.ttf") format("truetype");
+  font-family: "poppinsThin";
+  src: url("../poppins-cufonfonts/Poppins-Thin.ttf") format("truetype");
   font-weight: 100; /* This corresponds to Thin font weight */
 }
 /* Font end */
@@ -120,59 +120,47 @@
 /* Global */
 
 .Navlink-Active {
-  @apply font-outfitSemiBold;
+  @apply font-poppinsBold;
 }
 
 .nav-bg-Gradient {
-  background: linear-gradient(270deg, #3e5580 0%, #c4d8ff 100%);
-}
-.nav-bg-Article {
-  background: linear-gradient(180deg, #3e5580 0%, rgba(123, 204, 225, 0) 100%);
+  background: linear-gradient(180deg, rgba(250, 247, 245, 0.99) 67.48%, rgba(250, 247, 245, 0.77) 79.33%, rgba(250, 247, 245, 0) 100%);
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 4px #3e5580;
-}
-.border-shadow {
-  filter: drop-shadow(0px 0px 10px #3e5580);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 /* Tambahkan efek transisi ke semua properti yang berubah */
-.burger-menu-button {
-  transition: all 0.3s ease-in-out;
-}
-.button-learn-more {
-  background: linear-gradient(180deg, #c4d8ff 0%, #c4d8ff 11.46%, #3e5580 100%);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.grid-rows-3 .row-span-1:nth-child(2) {
-  margin-top: -1px; /* Adjust this value to suit your design */
-}
-.burger-menu-popup {
-  background-image: url("temp-asset\homepage\bg-tangan.svg");
-  background-size: cover;
-}
+
 /* Global End */
 
 /*Homepage css */
-.background-homepage {
-  background: linear-gradient(270deg, #3e5580 0%, #c4d8ff 100%);
-}
-.background-BU {
-  background: linear-gradient(180deg, #e9f2f8 0%, rgba(233, 242, 248, 0) 100%);
-}
-.background-article {
-  background: linear-gradient(180deg, #3e5580 0%, rgba(123, 204, 225, 0) 100%);
-}
-.background-OB-kanan-1 {
-  background: linear-gradient(90deg, #f6c500 0%, rgba(246, 197, 0, 0) 115.7%);
-}
-.background-OB-kanan-2 {
-  background: linear-gradient(90deg, #7bcce1 -6.54%, rgba(123, 204, 225, 0) 111.26%);
-}
-.background-OB-kanan-3 {
-  background: linear-gradient(90deg, #a0ffa0 0%, rgba(160, 255, 160, 0) 113.3%);
-}
+.signup-button {
+  border-radius: 109px;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 43%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 43%) bottom left / 50% 50% no-repeat,
+    linear-gradient(to top left, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 43%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 43%) top right / 50% 50% no-repeat,
+    radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%), #1d77ff;
 
+  box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset;
+}
+.why__learn {
+  margin-bottom: 24px !important;
+}
+.steam-box {
+  background: radial-gradient(463.26% 49.39% at 50.61% 50%, #fff85c 0%, #ffb800 100%);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 0 !important;
+}
+.program-box {
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.program-detail-box {
+  border-radius: 30px;
+  background: linear-gradient(146deg, rgba(255, 255, 255, 0.7) -30.23%, rgba(255, 255, 255, 0) 46.34%, rgba(255, 255, 255, 0) 79.48%), #ffb117;
+  box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset;
+}
 /*Homepage css */
 
 /* vanila css end*/
