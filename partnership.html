@@ -3,25 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cyberspace | Homepage</title>
+    <title>Cyberspace | Partnership</title>
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body class="">
-    <header>
-      <div class="flex justify-between container">
-        <div>
+    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
+      <div class="flex justify-between container items-center">
+        <div class="flex items-center justify-center">
           <img src="temp-asset/static-asset/cyberspace-logo.svg" alt="" />
         </div>
-        <div class="flex gap-10">
+        <div class="gap-10 items-center justify-center sm:flex hidden">
           <a href="index.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
           <a href="aboutus.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold aboutActive">About Us</h1> </a>
           <a href="course.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold courseActive">Course</h1></a>
           <a href="partnership.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold partnershipActive">Partnership</h1></a>
           <a href="faq.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold faqActive">FAQ</h1></a>
         </div>
+        <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-top-right ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-bottom-right ease-in-out duration-300"></span>
+        </button>
+        <button class="hidden burger-menu-close z-[120] fixed right-0 top-0" onclick="closeBurgerPopup()">
+          <div>
+            <img src="temp-asset/static-asset/close.svg" class="w-12" alt="" />
+          </div>
+        </button>
+      </div>
+
+      <div class="burger-menu-popup hidden w-full fixed h-full top-0 right-0 z-[100]" id="popupBurger">
+        <div class="flex flex-col absolute top-0 w-full items-center container h-full gap-12 py-12 justify-center" style="background-color: rgba(256, 256, 256, 0.85)">
+          <a href="index.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Home</h3>
+          </a>
+          <a href="aboutus.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
+          </a>
+          <a href="course.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Course</h3>
+          </a>
+          <a href="partnership.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Partnership</h3>
+          </a>
+          <a href="faq.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">FAQ</h3>
+          </a>
+        </div>
       </div>
     </header>
-    <h1 class="font-poppinsSemiBold text-emerald-300">Test</h1>
+    <section class="partnership__banner">
+      <div class="bg-partnership-banner bg-cover h-[480px] sm:justify-end justify-center items-center flex text-center">
+        <div class="flex-col sm:gap-4 gap-1 flex relative container">
+          <div>
+            <h1 class="sm:text-cyberspace-orange text-white text-shadow sm:text-end text-center font-poppinsSemiBold sm:text-[64px] text-[48px] sm:py-0 py-4">Partnership</h1>
+          </div>
+
+          <div class="sm:justify-end justify-center items-center flex sm:mt-10 mt-5">
+            <button class="w-fit signup-button">
+              <h3 class="text-white font-poppinsBold text-[20px] py-2 px-4">Become a Partner</h3>
+            </button>
+          </div>
+          <!-- <img src="temp-asset/course/banner-kiri.svg" class="absolute" alt="" /> -->
+        </div>
+      </div>
+    </section>
+    <section class="meet__partner">
+      <div class="container">
+        <div class="flex flex-col justify-center items-center gap-6">
+          <h1 class="text-black font-poppinsSemiBold text-[40px] sm:text-left text-center sm:leading-none leading-normal">Meet Our Partners</h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] text-center w-[80%]">We have a community of wonderful and driven educators and partners who have collaborated with us to spread knowledge throughout tuition centers, offline events, digital partnerships, and lots more!</h3>
+          <img src="temp-asset/partnership/partner.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="join__partner bg-partnership-oval bg-cover sm:py-24 py-32 sm:px-0 px-4">
+      <h1 class="text-center text-white text-[40px] font-poppinsSemiBold sm:leading-none leading-normal">Join our Community Partner</h1>
+      <div class="flex justify-center items-center gap-8 container mt-6 sm:flex-row flex-col">
+        <div class="flex flex-col gap-3 box-biru container justify-center items-center h-[370px]">
+          <img src="temp-asset/partnership/rumah.svg" class="w-[110px]" alt="" />
+          <h1 class="text-black text-[24px] font-poppinsSemiBold text-center">School Partner</h1>
+          <h3 class="text-center text-black font-poppinsRegular text-[14px]">Employ our learning platform infused with AI capabilities to instruct your students in one of the crucial skills essentials</h3>
+          <button>
+            <div class="box-button-orange">
+              <a href="school-partner.html">
+                <h3 class="text-whitea px-3 py-2 font-poppinsSemiBold text-[24px] text-white text-center">Register</h3>
+              </a>
+            </div>
+          </button>
+        </div>
+        <div class="flex flex-col gap-3 box-biru container justify-center items-center h-[370px]">
+          <img src="temp-asset/partnership/chat.svg" class="w-[110px]" alt="" />
+          <h1 class="text-black text-[24px] font-poppinsSemiBold text-center">Affiliate Partner</h1>
+          <h3 class="text-center text-black font-poppinsRegular text-[14px]">Utilize your network and gain rewards as young minds embark on their coding journeys!</h3>
+          <button>
+            <div class="box-button-orange">
+              <a href="affiliate-partner.html">
+                <h3 class="text-whitea px-3 py-2 font-poppinsSemiBold text-[24px] text-white text-center">Register</h3>
+              </a>
+            </div>
+          </button>
+        </div>
+        <div class="flex flex-col gap-3 box-biru container justify-center items-center h-[370px]">
+          <img src="temp-asset/partnership/calender.svg" class="w-[110px]" alt="" />
+          <h1 class="text-black text-[24px] font-poppinsSemiBold text-center">Program Partner</h1>
+          <h3 class="text-center text-black font-poppinsRegular text-[14px]">Let’s build a mutually benefit collaboration for the growth of your business!</h3>
+          <button>
+            <div class="box-button-orange">
+              <h3 class="text-whitea px-3 py-2 font-poppinsSemiBold text-[24px] text-white text-center">Register</h3>
+            </div>
+          </button>
+        </div>
+        <div class="flex flex-col gap-3 box-biru container justify-center items-center h-[370px]">
+          <img src="temp-asset/partnership/pensil.svg" class="w-[110px]" alt="" />
+          <h1 class="text-black text-[24px] font-poppinsSemiBold text-center">Business Partner</h1>
+          <h3 class="text-center text-black font-poppinsRegular text-[14px]">We are looking for Business Partner in every cities in Indonesia</h3>
+          <button>
+            <div class="box-button-orange">
+              <h3 class="text-whitea px-3 py-2 font-poppinsSemiBold text-[24px] text-white text-center">Register</h3>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="why__join">
+      <h1 class="text-black text-center text-[40px] font-poppinsSemiBold sm:leading-none leading-normal">Why Join our Partner Program</h1>
+      <div class="container flex justify-center items-center sm:gap-10 gap-4 mt-10 sm:flex-row flex-col">
+        <div class="flex flex-col gap-6 justify-center items-center w-[289px] h-[370px]">
+          <div class="w-[80%]">
+            <img src="temp-asset/partnership/dompet.svg" class="w-full" alt="" />
+          </div>
+          <h1 class="text-black text-center text-[24px] font-poppinsSemiBold">Revenue Share</h1>
+          <h3 class="text-black text-center text-[14px] font-poppinsRegular">Receive a top-tier revenue share for every new student you bring on board.</h3>
+        </div>
+        <div class="flex flex-col gap-6 justify-center items-center w-[289px] h-[370px]">
+          <div class="w-[80%]">
+            <img src="temp-asset/partnership/makeblock.png" class="w-full" alt="" />
+          </div>
+          <h1 class="text-black text-center text-[24px] font-poppinsSemiBold">Powered Product by Makeblock</h1>
+          <h3 class="text-black text-center text-[14px] font-poppinsRegular">Makeblock has already established intracurriculum learning with schools make STEAM education not just additional acitivy, which makes Cyberspace program is a course set that parents needed.</h3>
+        </div>
+        <div class="flex flex-col gap-6 justify-center items-center w-[289px] h-[370px]">
+          <div class="w-[80%]">
+            <img src="temp-asset/partnership/orang.svg" class="w-full" alt="" />
+          </div>
+          <h1 class="text-black text-center text-[24px] font-poppinsSemiBold">Improve Student Base</h1>
+          <h3 class="text-black text-center text-[14px] font-poppinsRegular">Our learning solution utilises the basic application of coding through play, to develop curiosity, imagination, computational thinking, problem solving and cognitive abilities.</h3>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-cyberspace-orange sm:pt-32 pt-16 rounded-t-[50px] pb-16 w-full">
+        <div class="container flex sm:justify-between justify-center sm:flex-row flex-col sm:gap-0 gap-10">
+          <div class="flex flex-col sm:justify-start justify-center sm:items-start items-center">
+            <div><img src="temp-asset/static-asset/cyberspace-kecil-logo.png" alt="" /></div>
+            <h3 class="text-[12px] text-white text-shadow font-poppinsRegular">Empowering Futures & Transforming Technology</h3>
+            <div class="flex">
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+              <img src="temp-asset/static-asset/linkedin.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col sm:justify-end justify-center sm:items-end items-center sm:text-end text-center">
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">
+              Amanyaak Building lt.5 <br />
+              Jln. Pluit Selatan No.5-6, Penjaringan, Jakarta Utara
+            </h3>
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">atikah@cyberspaceedu.com</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="js/contact-us.js"></script>
   <script src="js/header.js"></script>

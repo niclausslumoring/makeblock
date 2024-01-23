@@ -11,6 +11,10 @@ module.exports = {
         "homepage-banner": "url('../temp-asset/homepage/bg-homepage-1.png')",
         "about-us-banner": "url('../temp-asset/about-us/banner.svg')",
         "course-banner": "url('../temp-asset/course/banner.svg')",
+        "partnership-banner": "url('../temp-asset/partnership/banner.svg')",
+        "partnership-oval": "url('../temp-asset/partnership/oval.svg')",
+        "school-partnership": "url('../temp-asset/partnership/school/banner.svg')",
+        "affiliate-partnership": "url('../temp-asset/partnership/affiliate/banner.svg')",
       },
 
       fontFamily: {
