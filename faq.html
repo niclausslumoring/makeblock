@@ -3,25 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cyberspace | Homepage</title>
+    <title>Cyberspace | FAQ</title>
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body class="">
-    <header>
-      <div class="flex justify-between container">
-        <div>
+    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
+      <div class="flex justify-between container items-center">
+        <div class="flex items-center justify-center">
           <img src="temp-asset/static-asset/cyberspace-logo.svg" alt="" />
         </div>
-        <div class="flex gap-10">
+        <div class="gap-10 items-center justify-center sm:flex hidden">
           <a href="index.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
           <a href="aboutus.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold aboutActive">About Us</h1> </a>
           <a href="course.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold courseActive">Course</h1></a>
           <a href="partnership.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold partnershipActive">Partnership</h1></a>
           <a href="faq.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold faqActive">FAQ</h1></a>
         </div>
+        <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-top-right ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-bottom-right ease-in-out duration-300"></span>
+        </button>
+        <button class="hidden burger-menu-close z-[120] fixed right-0 top-0" onclick="closeBurgerPopup()">
+          <div>
+            <img src="temp-asset/static-asset/close.svg" class="w-12" alt="" />
+          </div>
+        </button>
+      </div>
+
+      <div class="burger-menu-popup hidden w-full fixed h-full top-0 right-0 z-[100]" id="popupBurger">
+        <div class="flex flex-col absolute top-0 w-full items-center container h-full gap-12 py-12 justify-center" style="background-color: rgba(256, 256, 256, 0.85)">
+          <a href="index.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Home</h3>
+          </a>
+          <a href="aboutus.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
+          </a>
+          <a href="course.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Course</h3>
+          </a>
+          <a href="partnership.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Partnership</h3>
+          </a>
+          <a href="faq.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">FAQ</h3>
+          </a>
+        </div>
       </div>
     </header>
-    <h1 class="font-poppinsSemiBold text-emerald-300">Test</h1>
+    <section class="FAQ__banner">
+      <div class="bg-faq-banner bg-cover h-[480px] justify-center items-center flex text-center">
+        <div class="flex-col sm:gap-4 gap-1 flex relative container">
+          <div class="absolute sm:-top-[350%] top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+            <h1 class="text-white text-shadow text-center font-poppinsSemiBold sm:text-[64px] text-[48px] sm:py-0 py-4 sm:leading-none leading-tight">FAQ</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq__content">
+      <div class="container flex justify-center items-center flex-col gap-6">
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Bagaimana cara mendapatkan free trial?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Anda dapat menjadwalkan free trial dengan Student Advisor kami melalui form pada laman registrasi.</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Apakah kelas dilaksanakan secara offline atau online?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Saat ini, Cyberspace menyediakan offline class untuk daerah Pluit saja. Untuk info terbaru, silahkan follow akun Instagram kami di @Cyberspace.edutech</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Umumnya, laptop dengan webcam, koneksi internet yang memadai, dan akun Gmail untuk digunakan oleh anak. Khusus untuk Little Koders (usia 4-8 tahun), iPad dibutuhkan untuk proses belajar mengajar.</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Anda dapat menjadwalkan free trial dengan Student Advisor kami melalui form pada laman registrasi.</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Anak saya belum pernah mengoperasikan komputer menggunakan mouse/keyboard, apakah anak saya bisa belajar coding di Cyberspace?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">
+            Kurikulum Little Koders (umur 4-8 tahun) dipersiapkan untuk anak-anak yang bahkan belum pernah mengoperasikan sebuah komputer. Namun untuk Junior Koders (umur 8-12 tahun), anak diwajibkan bisa mengoperasikan komputer menggunakan mouse & keyboard.
+          </h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Bagaimana cara mendapatkan free trial?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Anda dapat menjadwalkan free trial dengan Student Advisor kami melalui form pada laman registrasi.</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Apakah saya bisa memilih jadwal kelas untuk anak saya?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Tentunya! Jadwal kelas dapat didiskusikan dengan Student Advisor kami.</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Anak saya berusia YY tahun, modul apa yang tersedia untuk anak saya?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Informasi course yang kami tawarkan dapat diakses di laman Little Koders (4-8 tahun) dan Junior Koders (8-16 tahun).</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Apa yang anak saya akan pelajari selama kursus di Cyberspace?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Kurikulum Cyberspace dirancang dengan pendekatan project-based. Pada akhir course, anak akan dibimbing membuat final project dan mempresentasikannya kepada guru dan orang tua.</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Apakah anak saya akan mendapatkan sertifikat?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Ya! Sertifikat akan diberikan untuk setiap course yang mereka selesaikan.</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Bahasa pengantar apa yang dipakai dalam proses pembelajaran?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Proses pembelajaran di Cyberspace menggunakan sistem bilingual; bahasa Indonesia dan bahasa Inggris.</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Berapa banyak jumlah murid per kelas?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Untuk menjaga kualitas pengajaran, kami membatasi maksimal 5-6 murid per kelas.</h3>
+        </div>
+        <div class="rounded-[30px] border border-cyberspace-orange px-3 py-4 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[20px]">
+            <ol style="list-style-type: disc" class="pl-4">
+              <li>Kapan Cyberspace tersedia di kota saya?</li>
+            </ol>
+          </h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pl-4 pt-3">Kami mengajak Anda untuk menjadi salah satu partner waralaba kami! Silakan hubungi kami melalui form pada laman partnership.</h3>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-cyberspace-orange sm:pt-32 pt-16 rounded-t-[50px] pb-16 w-full">
+        <div class="container flex sm:justify-between justify-center sm:flex-row flex-col sm:gap-0 gap-10">
+          <div class="flex flex-col sm:justify-start justify-center sm:items-start items-center">
+            <div><img src="temp-asset/static-asset/cyberspace-kecil-logo.png" alt="" /></div>
+            <h3 class="text-[12px] text-white text-shadow font-poppinsRegular">Empowering Futures & Transforming Technology</h3>
+            <div class="flex">
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+              <img src="temp-asset/static-asset/linkedin.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col sm:justify-end justify-center sm:items-end items-center sm:text-end text-center">
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">
+              Amanyaak Building lt.5 <br />
+              Jln. Pluit Selatan No.5-6, Penjaringan, Jakarta Utara
+            </h3>
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">atikah@cyberspaceedu.com</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="js/contact-us.js"></script>
   <script src="js/header.js"></script>

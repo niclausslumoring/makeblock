@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberspace | Business Partner</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body class="">
+    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
+      <div class="flex justify-between container items-center">
+        <div class="flex items-center justify-center">
+          <img src="temp-asset/static-asset/cyberspace-logo.svg" alt="" />
+        </div>
+        <div class="gap-10 items-center justify-center sm:flex hidden">
+          <a href="index.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
+          <a href="aboutus.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold aboutActive">About Us</h1> </a>
+          <a href="course.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold courseActive">Course</h1></a>
+          <a href="partnership.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold partnershipActive">Partnership</h1></a>
+          <a href="faq.html"><h1 class="font-poppinsRegular text-cyberspace-orange text-[16px] hover:font-poppinsBold faqActive">FAQ</h1></a>
+        </div>
+        <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-top-right ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-bottom-right ease-in-out duration-300"></span>
+        </button>
+        <button class="hidden burger-menu-close z-[120] fixed right-0 top-0" onclick="closeBurgerPopup()">
+          <div>
+            <img src="temp-asset/static-asset/close.svg" class="w-12" alt="" />
+          </div>
+        </button>
+      </div>
+
+      <div class="burger-menu-popup hidden w-full fixed h-full top-0 right-0 z-[100]" id="popupBurger">
+        <div class="flex flex-col absolute top-0 w-full items-center container h-full gap-12 py-12 justify-center" style="background-color: rgba(256, 256, 256, 0.85)">
+          <a href="index.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Home</h3>
+          </a>
+          <a href="aboutus.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
+          </a>
+          <a href="course.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Course</h3>
+          </a>
+          <a href="partnership.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Partnership</h3>
+          </a>
+          <a href="faq.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">FAQ</h3>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="bussainess__partnership__banner">
+      <div class="bg-bussiness-partnership bg-cover h-[480px] justify-center items-center flex text-center">
+        <div class="flex-col sm:gap-4 gap-1 flex relative container">
+          <div>
+            <h1 class="text-white text-shadow text-center font-poppinsSemiBold sm:text-[64px] text-[48px] sm:py-0 py-4 sm:leading-none leading-tight">Business Partner</h1>
+          </div>
+
+          <div class="justify-center items-center flex sm:mt-10 mt-5">
+            <button class="w-fit signup-button">
+              <h3 class="text-white font-poppinsBold text-[20px] py-2 px-4">Become a Partner</h3>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="business__content">
+      <div class="container flex gap-4 sm:flex-row flex-col-reverse">
+        <div class="sm:w-1/2 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[40px] sm:leading-none leading-tight">Cyberspace Franchise Adavantage</h1>
+          <h3 class="text-black font-poppinsRegular text-[16px] pt-4">
+            Makeblock has already established intracurriculum learning with schools that makes STEAM Education not just additional activity, which makes Cyberspace program is a course set that parent needed. An extra STEAM course outside school to help their children at school.
+            <ol style="list-style-type: disc" class="pl-4 pt-6">
+              <li>With Cyberspace Academy by Makeblock Education established as one of the learning center at your area, we will direct our customers there to take courses or buy products from your learning center;</li>
+              <li>Additional revenue generation through Adhoc Activities and Programs like summer camps, special care, annual competition, etc;</li>
+              <li>Flexible programs, we are open to any related customized program;</li>
+              <li>and Reasonable pricing policies, no hidden cost & no false promises</li>
+            </ol>
+          </h3>
+        </div>
+        <div class="sm:w-1/2 w-full">
+          <img src="temp-asset/partnership/bussiness/kanan-1.svg" class="w-full" alt="" />
+        </div>
+      </div>
+      <div class="container flex gap-4 mt-6 sm:flex-row flex-col-reverse">
+        <div class="sm:w-1/2 w-full">
+          <h1 class="text-black font-poppinsSemiBold text-[40px] sm:leading-none leading-tight">Cyberspace Franchise System</h1>
+          <h3 class="text-black font-poppinsSemiBold text-[16px] pt-4">Full Brand</h3>
+          <h3 class="text-black font-poppinsRegular text-[16px] pt-2">
+            Partner use the Cyberspace Academy by Makeblock Education brand, becoming our representative as a learning center in your area. Any training request from schools in your area will be directed to you (all revenue is for your center, including for every Makeblock tools.)
+          </h3>
+          <h3 class="text-black font-poppinsSemiBold text-[16px] pt-4">Powered by Cyberspace</h3>
+          <h3 class="text-black font-poppinsRegular text-[16px] pt-2">Partner use their own brand (existing or new) and will be powered by LIT, Cyberspace will be an injected program</h3>
+          <h3 class="text-black font-poppinsSemiBold text-[16px] pt-4">Supported by Cyberspace</h3>
+          <h3 class="text-black font-poppinsRegular text-[16px] pt-2">Partner use their own brand (existing or new) and will be powered by LIT, Cyberspace will be an injected program</h3>
+        </div>
+        <div class="sm:w-1/2 w-full">
+          <img src="temp-asset/partnership/bussiness/kanan-2.svg" class="w-full" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-cyberspace-orange sm:pt-32 pt-16 rounded-t-[50px] pb-16 w-full">
+        <div class="container flex sm:justify-between justify-center sm:flex-row flex-col sm:gap-0 gap-10">
+          <div class="flex flex-col sm:justify-start justify-center sm:items-start items-center">
+            <div><img src="temp-asset/static-asset/cyberspace-kecil-logo.png" alt="" /></div>
+            <h3 class="text-[12px] text-white text-shadow font-poppinsRegular">Empowering Futures & Transforming Technology</h3>
+            <div class="flex">
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+              <img src="temp-asset/static-asset/linkedin.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col sm:justify-end justify-center sm:items-end items-center sm:text-end text-center">
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">
+              Amanyaak Building lt.5 <br />
+              Jln. Pluit Selatan No.5-6, Penjaringan, Jakarta Utara
+            </h3>
+            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">atikah@cyberspaceedu.com</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/contact-us.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/nav.js"></script>
+</html>

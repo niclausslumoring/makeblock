@@ -9,12 +9,15 @@ module.exports = {
     extend: {
       backgroundImage: {
         "homepage-banner": "url('../temp-asset/homepage/bg-homepage-1.png')",
+        "faq-banner": "url('../temp-asset/faq/banner.svg')",
         "about-us-banner": "url('../temp-asset/about-us/banner.svg')",
         "course-banner": "url('../temp-asset/course/banner.svg')",
         "partnership-banner": "url('../temp-asset/partnership/banner.svg')",
         "partnership-oval": "url('../temp-asset/partnership/oval.svg')",
         "school-partnership": "url('../temp-asset/partnership/school/banner.svg')",
         "affiliate-partnership": "url('../temp-asset/partnership/affiliate/banner.svg')",
+        "program-partnership": "url('../temp-asset/partnership/program/banner.svg')",
+        "bussiness-partnership": "url('../temp-asset/partnership/bussiness/banner.svg')",
       },
 
       fontFamily: {
