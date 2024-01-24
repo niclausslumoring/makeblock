@@ -672,10 +672,6 @@ hr {
   top: -3%;
 }
 
-.-top-\[350\%\] {
-  top: -350%;
-}
-
 .-top-\[8\%\] {
   top: -8%;
 }
@@ -781,6 +777,10 @@ hr {
   height: 0.25rem;
 }
 
+.h-\[126px\] {
+  height: 126px;
+}
+
 .h-\[370px\] {
   height: 370px;
 }
@@ -789,20 +789,36 @@ hr {
   height: 480px;
 }
 
+.h-\[72px\] {
+  height: 72px;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-\[\] {
-  height: ;
+.h-\[110px\] {
+  height: 110px;
 }
 
-.h-\[121\] {
-  height: 121;
+.h-\[400px\] {
+  height: 400px;
 }
 
-.h-\[121px\] {
-  height: 121px;
+.h-\[128px\] {
+  height: 128px;
+}
+
+.h-\[101px\] {
+  height: 101px;
+}
+
+.h-\[192px\] {
+  height: 192px;
+}
+
+.h-\[122px\] {
+  height: 122px;
 }
 
 .w-1\/2 {
@@ -988,6 +1004,10 @@ hr {
   gap: 54px;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .text-ellipsis {
   text-overflow: ellipsis;
 }
@@ -1065,10 +1085,6 @@ hr {
   background-image: url('../temp-asset/partnership/banner.svg');
 }
 
-.bg-partnership-oval {
-  background-image: url('../temp-asset/partnership/oval.svg');
-}
-
 .bg-program-partnership {
   background-image: url('../temp-asset/partnership/program/banner.svg');
 }
@@ -1077,8 +1093,21 @@ hr {
   background-image: url('../temp-asset/partnership/school/banner.svg');
 }
 
+.bg-partnership-oval {
+  background-image: url('../temp-asset/partnership/oval.svg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-3 {
@@ -1664,16 +1693,16 @@ h6 {
 }
 
 @media (min-width: 640px) {
+  .sm\:-top-\[350\%\] {
+    top: -350%;
+  }
+
   .sm\:-top-\[4\%\] {
     top: -4%;
   }
 
   .sm\:-top-\[6\%\] {
     top: -6%;
-  }
-
-  .sm\:-top-\[350\%\] {
-    top: -350%;
   }
 
   .sm\:mt-10 {
@@ -1690,6 +1719,40 @@ h6 {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-\[126px\] {
+    height: 126px;
+  }
+
+  .sm\:h-\[72px\] {
+    height: 72px;
+  }
+
+  .sm\:h-\[370px\] {
+    height: 370px;
+  }
+
+  .sm\:h-\[400px\] {
+    height: 400px;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:sm\:h-\[126px\] {
+      height: 126px;
+    }
+  }
+
+  .sm\:h-\[101px\] {
+    height: 101px;
+  }
+
+  .sm\:h-\[192px\] {
+    height: 192px;
+  }
+
+  .sm\:h-\[122px\] {
+    height: 122px;
   }
 
   .sm\:w-1\/2 {
@@ -1715,6 +1778,10 @@ h6 {
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-\[50\%\] {
+    width: 50%;
   }
 
   .sm\:grid-flow-col {
