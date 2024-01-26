@@ -815,6 +815,14 @@ hr {
   height: 100%;
 }
 
+.h-\[1\.5em\] {
+  height: 1.5em;
+}
+
+.max-h-4 {
+  max-height: 1rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -886,6 +894,26 @@ hr {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[1\] {
+  width: 1;
+}
+
+.w-\[1\.5em\] {
+  width: 1.5em;
+}
+
+.w-\[275px\] {
+  width: 275px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
+.max-w-\[270px\] {
+  max-width: 270px;
 }
 
 .origin-bottom-right {
