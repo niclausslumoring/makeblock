@@ -7,9 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showImage(index) {
     const images = slider.children;
+    const screenWidth = window.innerWidth;
+
+    // Menentukan jumlah foto yang akan ditampilkan berdasarkan lebar layar
+    const numVisibleImages = screenWidth >= 640 ? 3 : 1;
+
     for (let i = 0; i < images.length; i++) {
       const adjustedIndex = (index + i) % images.length;
-      if (i >= 0 && i < 3) {
+      if (i >= 0 && i < numVisibleImages) {
         images[adjustedIndex].classList.remove("hidden");
       } else {
         images[adjustedIndex].classList.add("hidden");
