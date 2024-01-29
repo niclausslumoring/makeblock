@@ -148,6 +148,7 @@
   transform: rotate(180deg);
   transition: transform 0.1s ease; /* Efek animasi transisi */
 }
+
 /* Tambahkan efek transisi ke semua properti yang berubah */
 
 /* Global End */
@@ -230,6 +231,5 @@
   background: radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(255, 245, 0, 0.23) 0%, rgba(255, 245, 0, 0) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%), #fff85c;
   box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
 
 /* vanila css end*/

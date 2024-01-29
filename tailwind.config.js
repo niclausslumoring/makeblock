@@ -37,6 +37,7 @@ module.exports = {
         "cyberspace-dark-orange": "#E7B200",
         "cyberspace-light-orange": "#FFB800",
         "cyberspace-super-light-orange": "#FFC604",
+        "cyberspace-form": "#FFD704",
         "cyberspace-blue": "#1D77FF",
         "cyberspace-green": "#2C5F2D",
         "cyberspace-brown": "#B66D21",

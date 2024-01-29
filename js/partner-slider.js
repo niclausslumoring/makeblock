@@ -23,11 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function prevImage() {
+    const screenWidth = window.innerWidth; // Tambahkan ini
+    const numVisibleImages = screenWidth >= 640 ? 3 : 1;
     currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
-    showImage(currentIndex);
+    showImage(currentIndex - numVisibleImages + 1);
   }
 
   function nextImage() {
+    const screenWidth = window.innerWidth; // Tambahkan ini
+    const numVisibleImages = screenWidth >= 640 ? 3 : 1;
     currentIndex = (currentIndex + 1) % slider.children.length;
     showImage(currentIndex);
   }

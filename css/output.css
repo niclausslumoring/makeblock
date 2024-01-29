@@ -706,16 +706,12 @@ hr {
   left: 50%;
 }
 
-.left-\[10\%\] {
-  left: 10%;
+.left-\[7\%\] {
+  left: 7%;
 }
 
 .right-0 {
   right: 0px;
-}
-
-.right-\[10\%\] {
-  right: 10%;
 }
 
 .top-0 {
@@ -724,6 +720,10 @@ hr {
 
 .top-1\/2 {
   top: 50%;
+}
+
+.top-\[8\%\] {
+  top: 8%;
 }
 
 .z-50 {
@@ -753,6 +753,10 @@ hr {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-10 {
@@ -903,6 +907,10 @@ hr {
   width: 80%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -960,6 +968,10 @@ hr {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1030,10 +1042,6 @@ hr {
   gap: 54px;
 }
 
-.gap-0 {
-  gap: 0px;
-}
-
 .text-ellipsis {
   text-overflow: ellipsis;
 }
@@ -1048,6 +1056,10 @@ hr {
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-\[30px\] {
+  border-radius: 30px;
 }
 
 .rounded-b-none {
@@ -1085,6 +1097,11 @@ hr {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-cyberspace-form {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 215 4 / var(--tw-bg-opacity));
+}
+
 .bg-cyberspace-light-orange {
   --tw-bg-opacity: 1;
   background-color: rgb(255 184 0 / var(--tw-bg-opacity));
@@ -1098,6 +1115,16 @@ hr {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cyberspace-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 119 255 / var(--tw-bg-opacity));
+}
+
+.bg-cyberspace-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(206 206 206 / var(--tw-bg-opacity));
 }
 
 .bg-about-us-banner {
@@ -1165,6 +1192,11 @@ hr {
   padding: 1.5rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1205,6 +1237,11 @@ hr {
   padding-bottom: 0.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -1218,6 +1255,11 @@ hr {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pb-10 {
@@ -1276,6 +1318,10 @@ hr {
   padding-top: 93px;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1328,6 +1374,10 @@ hr {
   font-size: 24px;
 }
 
+.text-\[28px\] {
+  font-size: 28px;
+}
+
 .text-\[32px\] {
   font-size: 32px;
 }
@@ -1371,6 +1421,11 @@ hr {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.text-\[\#F00\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1974,6 +2029,10 @@ h6 {
 }
 
 @media (min-width: 768px) {
+  .md\:w-\[65\%\] {
+    width: 65%;
+  }
+
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
