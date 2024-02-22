@@ -5,20 +5,24 @@ const nav = document.querySelector("header");
 const pathName = window.location.pathname;
 const pageName = pathName.split("/").pop();
 // Navlink
-if (pageName === "faq.html") {
-  document.querySelectorAll(".faqActive").forEach(function (element) {
+if (pageName === "partner.html") {
+  document.querySelectorAll(".partnerActive").forEach(function (element) {
+    element.classList.add("Navlink-Active");
+  });
+}
+if (pageName === "about-us.html") {
+  document.querySelectorAll(".aboutUsActive").forEach(function (element) {
+    element.classList.add("Navlink-Active");
+  });
+}
+if (pageName === "products.html") {
+  document.querySelectorAll(".productsActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
 
-if (pageName === "aboutus.html") {
-  document.querySelectorAll(".aboutActive").forEach(function (element) {
-    element.classList.add("Navlink-Active");
-  });
-}
-
-if (pageName === "course.html") {
-  document.querySelectorAll(".courseActive").forEach(function (element) {
+if (pageName === "warranty.html") {
+  document.querySelectorAll(".warrantyActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
@@ -28,8 +32,8 @@ if (pageName === "index.html") {
     element.classList.add("Navlink-Active");
   });
 }
-if (pageName === "partnership.html") {
-  document.querySelectorAll(".partnershipActive").forEach(function (element) {
+if (pageName === "article.html") {
+  document.querySelectorAll(".articleActive").forEach(function (element) {
     element.classList.add("Navlink-Active");
   });
 }
