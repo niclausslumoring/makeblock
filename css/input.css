@@ -161,6 +161,9 @@
 .home__banner {
   background: linear-gradient(90deg, #0bf 50.93%, #0cf 88.19%);
 }
+.text-banner {
+  color: linear-gradient(93deg, #fe5663 1.36%, #fd8e4a 99.02%);
+}
 /*Homepage css */
 
 /* vanila css end*/

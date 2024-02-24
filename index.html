@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makeblock | Homepage</title>
+    <title>Makeblock | Home</title>
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body class="">
     <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
-      <div class="flex justify-between container items-center">
+      <div class="flex sm:justify-between justify-center container items-center">
         <div class="flex items-center justify-center">
-          <img src="temp-asset/static-asset/logo-makeblock.svg" alt="" />
+          <img src="temp-asset/static-asset/logo-makeblock.svg" class="md:w-full w-[80%]" alt="" />
         </div>
         <div class="gap-10 items-center justify-center sm:flex hidden">
           <a href="index.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
@@ -20,6 +20,11 @@
           <a href="article.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold articleActive">Article</h1></a>
           <div>
             <a href="warranty.html"><h1 class="font-poppinsRegular text-white text-[16px] hover:font-poppinsBold warrantyActive px-2 py-1 warranty__box">Warranty</h1></a>
+          </div>
+
+          <div class="flex gap-6">
+            <img src="temp-asset/static-asset/search.svg" alt="" />
+            <a href="cart.html"><img src="temp-asset/static-asset/cart.svg" alt="" /></a>
           </div>
         </div>
         <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
@@ -42,40 +47,153 @@
           <a href="aboutus.html">
             <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
           </a>
-          <a href="course.html">
-            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Course</h3>
+          <a href="partner.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Partners</h3>
           </a>
-          <a href="partnership.html">
-            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Partnership</h3>
+          <a href="products.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Products</h3>
           </a>
-          <a href="faq.html">
-            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">FAQ</h3>
+          <a href="article.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Article</h3>
+          </a>
+          <a href="warranty.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Warranty</h3>
           </a>
         </div>
       </div>
     </header>
-
-    <footer>
-      <div class="bg-cyberspace-orange sm:pt-32 pt-16 rounded-t-[50px] pb-16 w-full">
-        <div class="container flex sm:justify-between justify-center sm:flex-row flex-col sm:gap-0 gap-10">
-          <div class="flex flex-col sm:justify-start justify-center sm:items-start items-center">
-            <div><img src="temp-asset/static-asset/cyberspace-kecil-logo.png" alt="" /></div>
-            <h3 class="text-[12px] text-white text-shadow font-poppinsRegular">Empowering Futures & Transforming Technology</h3>
-            <div class="flex">
-              <a href="https://www.instagram.com/cyberspace.edutech/">
-                <img src="temp-asset/static-asset/ig.svg" alt="" />
-              </a>
-              <a href="https://www.linkedin.com/company/pt-lab-inovasi-teknologi/">
-                <img src="temp-asset/static-asset/linkedin.svg" alt="" />
-              </a>
+    <section class="banner">
+      <div class="container flex">
+        <div class="w-1/2">
+          <img src="temp-asset/home/banner.svg" alt="" />
+        </div>
+        <div class="w-1/2">
+          <h1 class="text-[96px] font-poppinsExtraBold leading-normal text-banner">Enjoy Creating & Have Fun !</h1>
+          <h3 class="text-[24px] font-poppinsRegular text-black">The challenge is even more incredible to inspire our new generation to gain more creativities</h3>
+        </div>
+      </div>
+    </section>
+    <section class="2">
+      <div class="container flex gap-6">
+        <div class="w-1/2 flex flex-col gap-6">
+          <h1 class="text-[36px] text-black text-left font-poppinsMedium">What is Makeblock ?</h1>
+          <h3 class="text-[20px] text-left font-poppinsRegular text-black">
+            Makeblock is a private Chinese technology company headquartered in Shenzhen, China. It develops robotics hardware, and Scratch-based software for the purpose of providing educational tools for learning. This includes programming, engineering and mathematics through the use of robotics.
+          </h3>
+          <button class="py-2 px-3 warranty__box w-fit">
+            <h3 class="text-white font-poppinsSemiBold uppercase text-[20px] text-center">ABOUT MAKEBLOCK</h3>
+          </button>
+        </div>
+        <div class="w-1/2">
+          <h1 class="text-[36px] text-black text-left font-poppinsMedium">Core Values</h1>
+          <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-6">
+            <div class="flex flex-col gap-3 justify-center items-center border shadow-xl rounded-lg p-6">
+              <img src="temp-asset/home/steam.svg" alt="" />
+              <h3 class="text-black text-[24px] font-poppinsRegular text-left">Makeblock and STEAM Education</h3>
+            </div>
+            <div class="flex flex-col gap-3 justify-center items-center border shadow-xl rounded-lg p-6">
+              <img src="temp-asset/home/international.svg" alt="" />
+              <h3 class="text-black text-[24px] font-poppinsRegular text-left">International Education Standart</h3>
+            </div>
+            <div class="flex flex-col gap-3 justify-center items-center border shadow-xl rounded-lg p-6">
+              <img src="temp-asset/home/panda.svg" alt="" />
+              <h3 class="text-black text-[24px] font-poppinsRegular text-left">Software Users Exceeds 15 million</h3>
+            </div>
+            <div class="flex flex-col gap-3 justify-center items-center border shadow-xl rounded-lg p-6">
+              <img src="temp-asset/home/chart.svg" alt="" />
+              <h3 class="text-black text-[24px] font-poppinsRegular text-left">Explore & Solve Real-Life Problems</h3>
             </div>
           </div>
-          <div class="flex flex-col sm:justify-end justify-center sm:items-end items-center sm:text-end text-center">
-            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">
-              Amanyaak Building lt.5 <br />
-              Jln. Pluit Selatan No.5-6, Penjaringan, Jakarta Utara
-            </h3>
-            <h3 class="text-[16px] text-white text-shadow font-poppinsSemiBold">atikah@cyberspaceedu.com</h3>
+        </div>
+      </div>
+    </section>
+    <section class="partner">
+      <h1 class="text-center text-[36px] font-poppinsMedium text-black">Partners</h1>
+      <div class="container flex justify-between items-center">
+        <img src="temp-asset/home/partners/btb.svg" alt="" />
+        <img src="temp-asset/home/partners/kgs.svg" alt="" />
+        <img src="temp-asset/home/partners/jis.png" alt="" />
+        <img src="temp-asset/home/partners/bbs.svg" alt="" />
+        <img src="temp-asset/home/partners/sinarmas.svg" alt="" />
+        <img src="temp-asset/home/partners/sis.svg" alt="" />
+      </div>
+    </section>
+    <section class="featured__product">
+      <div class="container flex">
+        <div class="w-1/2">
+          <img src="temp-asset/home/mbot-2.svg" alt="" />
+        </div>
+        <div class="w-1/2 flex gap-4 flex-col">
+          <h3 class="text-left text-[20px] text-black font-poppinsRegular">MBOT NEO</h3>
+          <h3 class="text-left text-[36px] text-black font-poppinsMedium">Meet Our Featured Product</h3>
+          <h3 class="text-left text-[20px] text-black font-poppinsRegular">Scratch and Python Coding, kids will be able to start completely from scratch and transfer into real coding like Python with a simple click to gradually progress without changing to other software.</h3>
+          <div class="flex justify-between">
+            <h3 class="text-[20px] text-black font-poppinsRegular">Friendly For Beginners</h3>
+            <h3 class="text-[20px] text-black font-poppinsRegular">92%</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3 class="text-[20px] text-black font-poppinsRegular">Friendly For Beginners</h3>
+            <h3 class="text-[20px] text-black font-poppinsRegular">92%</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3 class="text-[20px] text-black font-poppinsRegular">Friendly For Beginners</h3>
+            <h3 class="text-[20px] text-black font-poppinsRegular">92%</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-makeblock-black-light">
+      <div class="container flex lg:justify-between justify-center items-center lg:flex-row flex-col">
+        <div class="flex justify-center lg:gap-12 gap-6 sm:h-[300px] h-fit sm:flex-row flex-col w-full">
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">About</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Services</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Contact Us</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Join MakeX</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">News Center</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">News</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Media Coverage</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Big Events</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Office Blog</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">Product Support</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Accessories & Others</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Warranty</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">After Sales Contact</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Makeblock Forum</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">Purchase</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Online Store</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Find Store</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 sm:h-[300px] h-fit sm:mt-0 mt-6">
+          <div class="flex flex-col gap-6 lg:justify-end justify-center">
+            <h3 class="text-white text-[16px] font-poppinsMedium lg:text-end text-center">Let’s Connect on Social Platform !</h3>
+            <div class="flex gap-6 lg:justify-end justify-center">
+              <img src="temp-asset/static-asset/youtube.svg" alt="" />
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-6 lg:justify-end justify-center">
+            <h3 class="text-white text-[16px] font-poppinsMedium lg:text-end text-center">Subscribe to get News Update !</h3>
+            <div class="flex sm:flex-row flex-col gap-2 lg:justify-end justify-center">
+              <input type="email" class="text-makeblock-gray w-[300px] pl-3 rounded-lg py-2" placeholder="Email Address" />
+              <button class="bg-makeblock-gray-light rounded-lg w-[100px] px-2"><h3 class="text-white uppercase text-[12px] font-poppinsSemiBold">Subscribe</h3></button>
+            </div>
           </div>
         </div>
       </div>

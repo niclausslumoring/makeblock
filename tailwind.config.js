@@ -36,9 +36,13 @@ module.exports = {
         "makeblock-orange": "#FD8E4A",
         "makeblock-orange-2": "#FF6922",
         "makeblock-gray": "#666666",
+        "makeblock-gray-light": "#6C7793",
         "makeblock-green": "#42CA24",
         "makeblock-blue": "#0074FF",
         "makeblock-blue-2": "#0C7BFF",
+        "makeblock-blue-light": "#F3FAFF",
+        "makeblock-black-light": "#2A2E3A",
+        "makeblock-yellow-light": "#FFFBE8",
       },
       screens: {
         xl: "1200px",
