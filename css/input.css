@@ -118,6 +118,16 @@
 }
 
 /* Global */
+select {
+  background-color: transparent; /* Mengatur latar belakang select menjadi transparan */
+  color: black; /* Mengatur warna teks */
+}
+
+option {
+  background-color: transparent; /* Mengatur latar belakang option menjadi transparan */
+  color: black; /* Mengatur warna teks option */
+}
+
 /* Accordion */
 @layer components {
   .accordion-header.active i {

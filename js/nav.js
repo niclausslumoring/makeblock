@@ -158,3 +158,29 @@ const mobileMenu = document.getElementById("offCanvasSm");
 mobileMenuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("translate-x-full");
 });
+
+function toggleDropdownDesktop() {
+  var dropdown = document.getElementById("partnerDropdownDesktop");
+  var arrow = document.getElementById("dropdownArrowDesktop");
+
+  if (dropdown.classList.contains("hidden")) {
+    dropdown.classList.remove("hidden");
+    arrow.style.transform = "rotate(180deg)";
+  } else {
+    dropdown.classList.add("hidden");
+    arrow.style.transform = "rotate(0deg)";
+  }
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("partnerDropdown");
+  var arrow = document.getElementById("dropdownArrow");
+
+  if (dropdown.classList.contains("hidden")) {
+    dropdown.classList.remove("hidden");
+    arrow.style.transform = "rotate(180deg)";
+  } else {
+    dropdown.classList.add("hidden");
+    arrow.style.transform = "rotate(0deg)";
+  }
+}

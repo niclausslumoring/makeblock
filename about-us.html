@@ -15,7 +15,19 @@
         <div class="gap-10 items-center justify-center sm:flex hidden">
           <a href="index.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
           <a href="about-us.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold aboutUsActive">About Us</h1></a>
-          <a href="partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive">Partners</h1> </a>
+          <div class="flex relative">
+            <h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer" onclick="toggleDropdownDesktop()">Partners</h1>
+            <svg id="dropdownArrowDesktop" xmlns="http://www.w3.org/2000/svg" class="transition-all ease-in-out duration-300 3xl:w-6 w-5 hover:cursor-pointer" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            <div id="partnerDropdownDesktop" class="absolute top-10 left-0 w-[170px] bg-white shadow-xl pl-2 hidden partner__dropdown">
+              <a href="school-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">School</h1></a>
+              <a href="reseller-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">Reseller</h1></a>
+              <a href="education-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">Education Partner</h1></a>
+            </div>
+          </div>
+
           <a href="products.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold productsActive">Products</h1></a>
           <a href="article.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold articleActive">Article</h1></a>
           <div>
@@ -47,9 +59,18 @@
           <a href="aboutus.html">
             <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
           </a>
-          <a href="partner.html">
-            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Partners</h3>
-          </a>
+          <div class="flex relative">
+            <h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer" onclick="toggleDropdown()">Partners</h1>
+            <svg id="dropdownArrow" xmlns="http://www.w3.org/2000/svg" class="transition-all ease-in-out duration-300 3xl:w-6 w-5 hover:cursor-pointer" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            <div id="partnerDropdown" class="absolute top-10 left-0 w-[170px] bg-white shadow-xl pl-2 hidden partner__dropdown py-2">
+              <a href="school-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer">School</h1></a>
+              <a href="reseller-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer mt-3">Reseller</h1></a>
+              <a href="education-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer mt-3">Education Partner</h1></a>
+            </div>
+          </div>
           <a href="products.html">
             <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Products</h3>
           </a>
@@ -65,7 +86,7 @@
     <section class="home__banner mt-32">
       <div class="flex justify-center items-center container">
         <h1 class="text-white font-poppinsExtraBold leading-normal sm:text-[96px] text-[56px] lg:text-left text-center lg:w-1/2 w-full">About Makeblock</h1>
-        <img src="temp-asset/home/banner.svg" class="w-1/2 lg:block hidden" alt="" />
+        <img src="temp-asset/about-us/banner.svg" class="w-1/2 lg:block hidden" alt="" />
       </div>
     </section>
     <section class="plus">
