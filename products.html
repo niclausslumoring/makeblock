@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeblock | Products</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="website icon" type="png" href="temp-asset/static-asset/logo-makeblock.svg" />
+  </head>
+  <body class="">
+    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
+      <div class="flex sm:justify-between justify-center container items-center">
+        <div class="flex items-center justify-center">
+          <img src="temp-asset/static-asset/logo-makeblock.svg" class="md:w-full w-[80%]" alt="" />
+        </div>
+        <div class="gap-10 items-center justify-center sm:flex hidden">
+          <a href="index.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
+          <a href="about-us.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold aboutUsActive">About Us</h1></a>
+          <div class="flex relative">
+            <h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer" onclick="toggleDropdownDesktop()">Partners</h1>
+            <svg id="dropdownArrowDesktop" xmlns="http://www.w3.org/2000/svg" class="transition-all ease-in-out duration-300 3xl:w-6 w-5 hover:cursor-pointer" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            <div id="partnerDropdownDesktop" class="absolute top-10 left-0 w-[170px] bg-white shadow-xl pl-2 hidden partner__dropdown">
+              <a href="school-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">School</h1></a>
+              <a href="reseller-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">Reseller</h1></a>
+              <a href="education-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">Education Partner</h1></a>
+            </div>
+          </div>
+
+          <a href="products.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold productsActive">Products</h1></a>
+          <a href="article.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold articleActive">Article</h1></a>
+          <div>
+            <a href="warranty.html"><h1 class="font-poppinsRegular text-white text-[16px] hover:font-poppinsBold warrantyActive px-2 py-1 warranty__box">Warranty</h1></a>
+          </div>
+
+          <div class="flex gap-6">
+            <img src="temp-asset/static-asset/search.svg" alt="" />
+            <a href="https://www.tokopedia.com/makeblock"><img src="temp-asset/static-asset/cart.svg" alt="" /></a>
+          </div>
+        </div>
+        <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-top-right ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-bottom-right ease-in-out duration-300"></span>
+        </button>
+        <button class="hidden burger-menu-close z-[120] fixed right-0 top-0" onclick="closeBurgerPopup()">
+          <div>
+            <img src="temp-asset/static-asset/close.svg" class="w-12" alt="" />
+          </div>
+        </button>
+      </div>
+
+      <div class="burger-menu-popup hidden w-full fixed h-full top-0 right-0 z-[100]" id="popupBurger">
+        <div class="flex flex-col absolute top-0 w-full items-center container h-full gap-12 py-12 justify-center" style="background-color: rgba(256, 256, 256, 0.85)">
+          <a href="index.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Home</h3>
+          </a>
+          <a href="about-us.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
+          </a>
+          <div class="flex relative">
+            <h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer" onclick="toggleDropdown()">Partners</h1>
+            <svg id="dropdownArrow" xmlns="http://www.w3.org/2000/svg" class="transition-all ease-in-out duration-300 3xl:w-6 w-5 hover:cursor-pointer" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            <div id="partnerDropdown" class="absolute top-10 left-0 w-[170px] bg-white shadow-xl pl-2 hidden partner__dropdown py-2">
+              <a href="school-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer">School</h1></a>
+              <a href="reseller-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer mt-3">Reseller</h1></a>
+              <a href="education-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer mt-3">Education Partner</h1></a>
+            </div>
+          </div>
+          <a href="products.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Products</h3>
+          </a>
+          <a href="article.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Article</h3>
+          </a>
+          <a href="warranty.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Warranty</h3>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="home__banner mt-32">
+      <div class="flex justify-center items-center container">
+        <h1 class="text-white font-poppinsExtraBold leading-normal sm:text-[96px] text-[56px] lg:text-left text-center lg:w-1/2 w-full">Products</h1>
+        <img src="temp-asset/about-us/banner.svg" class="w-1/2 lg:block hidden" alt="" />
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h1 class="text-center text-[48px] text-black font-poppinsMedium my-16">Robot Kits</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 grid-rows-2 justify-between gap-9">
+          <a href="mbot.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/mbot.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">mBot</h3>
+            </div>
+          </a>
+          <a href="mbot2.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/mbot2.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">mBot Neo/mBot 2</h3>
+            </div>
+          </a>
+          <a href="ranger.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/ranger.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">mBot Ranger</h3>
+            </div>
+          </a>
+          <a href="ultkit.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/ultkit.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">Ultimate 2.0 Kit</h3>
+            </div>
+          </a>
+          <a href="neuron.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/neuron.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">Neuron Inventor Kit</h3>
+            </div>
+          </a>
+          <a href="neuron2.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/neuron-2.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">Neuron Artist Kit</h3>
+            </div>
+          </a>
+          <a href="mtiny.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/mtiny.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">mTiny</h3>
+            </div>
+          </a>
+          <a href="mbot.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/neuron-3.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">Neuron Explorer Kit</h3>
+            </div>
+          </a>
+          <a href="cyberpi.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/cyberpi.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[14px] mx-4">Cyberpi Innovation Add on Pack</h3>
+            </div>
+          </a>
+          <a href="neuron4.html">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/neuron-4.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[16px] mx-4">Neuron Creative Lab Kit</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="text-center text-[48px] text-black font-poppinsMedium my-16 sm:leading-none leading-tight">Software & APPs</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 grid-rows-2 justify-between gap-9">
+          <a href="https://www.mblock.cc/en/download/">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/mblock5.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">mBlock5</h3>
+            </div>
+          </a>
+          <a href="https://www.makeblock.com/pages/software">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/makeblockapp.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[20px] mx-4">Makeblock APP</h3>
+            </div>
+          </a>
+          <a href="https://www.makeblock.com/pages/software">
+            <div class="flex justify-center items-center flex-col gap-6 border shadow-xl rounded-lg">
+              <img src="temp-asset/products/mblcky.svg" alt="" class="w-[286px] h-[185px] pt-6" />
+              <h3 class="text-white bg-makeblock-blue-light-3 text-center rounded-lg mb-6 w-fit px-3 py-2 text-[16px] mx-4">mBlock Blocky</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-makeblock-black-light">
+      <div class="container flex lg:justify-between justify-center items-center lg:flex-row flex-col">
+        <div class="flex justify-center lg:gap-12 gap-6 sm:h-[300px] h-fit sm:flex-row flex-col w-full">
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">About</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Services</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Contact Us</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Join MakeX</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">News Center</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">News</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Media Coverage</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Big Events</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Office Blog</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">Product Support</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Accessories & Others</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Warranty</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">After Sales Contact</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Makeblock Forum</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">Purchase</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Online Store</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Find Store</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 sm:h-[300px] h-fit sm:mt-0 mt-6">
+          <div class="flex flex-col gap-6 lg:justify-end justify-center">
+            <h3 class="text-white text-[16px] font-poppinsMedium lg:text-end text-center">Let’s Connect on Social Platform !</h3>
+            <div class="flex gap-6 lg:justify-end justify-center">
+              <img src="temp-asset/static-asset/youtube.svg" alt="" />
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-6 lg:justify-end justify-center">
+            <h3 class="text-white text-[16px] font-poppinsMedium lg:text-end text-center">Subscribe to get News Update !</h3>
+            <div class="flex sm:flex-row flex-col gap-2 lg:justify-end justify-center">
+              <input type="email" class="text-makeblock-gray w-[300px] pl-3 rounded-lg py-2" placeholder="Email Address" />
+              <button class="bg-makeblock-gray-light rounded-lg w-[100px] px-2"><h3 class="text-white uppercase text-[12px] font-poppinsSemiBold">Subscribe</h3></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/contact-us.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/popup.js"></script>
+</html>

@@ -136,7 +136,7 @@
     <section class="2">
       <div class="container flex gap-6 lg:flex-row flex-col">
         <div class="lg:w-1/2 w-full flex flex-col gap-6">
-          <h1 class="text-[36px] text-black text-left font-poppinsMedium">What is Makeblock ?</h1>
+          <h1 class="text-[36px] text-black text-left font-poppinsMedium sm:leading-none leading-tight">What is Makeblock ?</h1>
           <h3 class="text-[20px] text-left font-poppinsRegular text-black">
             Makeblock is a private Chinese technology company headquartered in Shenzhen, China. It develops robotics hardware, and Scratch-based software for the purpose of providing educational tools for learning. This includes programming, engineering and mathematics through the use of robotics.
           </h3>
@@ -242,8 +242,82 @@
       </div>
     </section>
     <section class="software">
-      <div class="container grid grid-cols-2 gap-6">
-        <div></div>
+      <h3 class="text-center uppercase font-poppinsRegular text-black text-[20px]">Programming</h3>
+      <h3 class="text-center uppercase font-poppinsMedium text-black text-[36px] mt-2 lg:leading-none leading-tight">Coding Software for Kids</h3>
+      <div class="container grid sm:grid-cols-2 grid-cols-1 grid-rows-2 gap-6">
+        <div class="bg-makeblock-green-2 relative h-[330px] px-4 rounded-xl">
+          <div class="absolute sm:top-[30%] top-[10%] left-[10%] z-[100]">
+            <h1 class="lg:text-[48px] text-[40px] font-poppinsSemiBold text-white sm:leading-none leading-tight">APP for Robots</h1>
+            <h3 class="font-poppinsSemiBold text-white text-[24px] sm:mt-0 mt-6">Get in the game with your mBot</h3>
+          </div>
+          <img src="temp-asset/home/software/hp.svg" class="absolute right-0 bottom-0" alt="" />
+        </div>
+        <div class="bg-makeblock-blue-light-2 relative sm:row-span-2 row-span-1 px-4 rounded-xl">
+          <div class="absolute lg:top-[60%] top-[10%] left-[10%] z-[100]">
+            <h1 class="lg:text-[48px] text-[40px] font-poppinsSemiBold text-white leading-tight">Coding Community for Kids</h1>
+            <h3 class="font-poppinsSemiBold text-white text-[24px] sm:mt-0 mt-6">Empowering Kids with supportive Coding Projects</h3>
+          </div>
+          <img src="temp-asset/home/software/merah.svg" class="absolute right-[10%] lg:top-[10%] lg:bottom-0 bottom-[10%] lg:w-[80%] w-[70%]" alt="" />
+        </div>
+        <div class="bg-makeblock-orange-3 relative h-[330px] px-4 rounded-xl">
+          <div class="absolute sm:top-[30%] top-[10%] left-[10%] z-[100]">
+            <h1 class="text-[48px] font-poppinsSemiBold text-white">mBlock 5</h1>
+            <h3 class="font-poppinsSemiBold text-white text-[24px] sm:leading-none leading-tight sm:mt-0 mt-6">Used by 1.6 Millions Kids & Makers.</h3>
+          </div>
+          <img src="temp-asset/home/software/panda.svg" class="absolute right-0 bottom-0" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <div class="lg:mx-[196px] mx-auto pb-10 rounded-lg shadow-xl flex flex-col gap-6 border relative mt-48">
+        <img src="temp-asset/home/maskot.svg" class="absolute md:-top-[35%] -top-[25%] left-1/2 -translate-x-1/2" alt="" />
+        <h3 class="text-black font-poppinsMedium text-[36px] text-center pt-10">Hi, Makeblock!</h3>
+        <h3 class="text-black font-poppinsRegular text-[24px] text-center">I want to get a Robotics & Coding Tips, Free Tutorials and Hot Deals</h3>
+
+        <form action="/action_page.php" id="myForm">
+          <div class="flex justify-center gap-6 items-center sm:flex-row flex-col">
+            <div class="border rounded-lg w-fit">
+              <input type="text" id="fname" name="fullname" class="pl-3 placeholder:text-makeblock-gray-form-text w-[322px] py-3 bg-makeblock-gray-form" placeholder="Your Name*" />
+            </div>
+            <div class="border rounded-lg w-fit">
+              <input type="email" id="email" name="email" class="pl-3 py-3 placeholder:text-makeblock-gray-form-text w-[322px] bg-makeblock-gray-form" placeholder="Email*" />
+            </div>
+          </div>
+          <div class="flex justify-center gap-6 items-center mt-6 sm:flex-row flex-col">
+            <div class="border rounded-lg w-fit">
+              <input type="number" id="phone" name="phone" class="pl-3 placeholder:text-makeblock-gray-form-text w-[322px] py-3 bg-makeblock-gray-form" placeholder="Phone*" />
+            </div>
+            <div class="border rounded-lg w-fit">
+              <input type="website" id="website" name="website" class="pl-3 placeholder:text-makeblock-gray-form-text w-[322px] py-3 bg-makeblock-gray-form" placeholder="Website" />
+            </div>
+          </div>
+          <div class="flex justify-center gap-6 items-center mt-6">
+            <div class="border rounded-lg">
+              <textarea rows="4" cols="40" placeholder="Message" class="pl-3 placeholder:text-makeblock-gray-form-text py-3 sm:w-[665px] w-full bg-makeblock-gray-form"></textarea>
+            </div>
+          </div>
+          <div class="flex justify-center items-center mt-6">
+            <button type="submit" class="py-2 px-3 hover:scale-105 w-fit bg-makeblock-gray rounded-lg" id="submitButton">
+              <h3 class="text-white font-poppinsSemiBold uppercase text-[20px] text-center">Submit</h3>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="latest">
+      <div class="container flex gap-6">
+        <div class="bg-latest-1 bg-no-repeat bg-cover w-[386px]">
+          <h3 class="text-white text-[16px] font-poppinsMedium">20/07/2023</h3>
+          <h3 class="text-white text-[24px] font-poppinsSemiBold w-[236px]">Pelatihan UNICAMP Ajarkan Puluhan Tenaga Pengajar Melek Perkembangan Teknologi</h3>
+        </div>
+        <div class="bg-latest-1 bg-no-repeat bg-cover w-[386px]">
+          <h3 class="text-white text-[16px] font-poppinsMedium">20/07/2023</h3>
+          <h3 class="text-white text-[24px] font-poppinsSemiBold w-[236px]">Pelatihan UNICAMP Ajarkan Puluhan Tenaga Pengajar Melek Perkembangan Teknologi</h3>
+        </div>
+        <div class="bg-latest-1 bg-no-repeat bg-cover w-[386px]">
+          <h3 class="text-white text-[16px] font-poppinsMedium">20/07/2023</h3>
+          <h3 class="text-white text-[24px] font-poppinsSemiBold w-[236px]">Pelatihan UNICAMP Ajarkan Puluhan Tenaga Pengajar Melek Perkembangan Teknologi</h3>
+        </div>
       </div>
     </section>
     <footer class="bg-makeblock-black-light">
@@ -307,5 +381,6 @@
   <script src="js/slider-home.js"></script>
   <script src="js/header.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/form-home.js"></script>
   <script src="js/popup.js"></script>
 </html>

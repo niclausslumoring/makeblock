@@ -17,7 +17,7 @@ module.exports = {
         "school-partnership": "url('../temp-asset/partnership/school/banner.svg')",
         "affiliate-partnership": "url('../temp-asset/partnership/affiliate/banner.svg')",
         "program-partnership": "url('../temp-asset/partnership/program/banner.svg')",
-        "bussiness-partnership": "url('../temp-asset/partnership/bussiness/banner.svg')",
+        "latest-1": "url('../temp-asset/static-asset/latest-1.svg')",
       },
 
       fontFamily: {
@@ -34,15 +34,21 @@ module.exports = {
 
       colors: {
         "makeblock-orange": "#FD8E4A",
+        "makeblock-orange-3": "#FBA53D",
         "makeblock-orange-2": "#FF6922",
         "makeblock-gray": "#666666",
         "makeblock-gray-light": "#6C7793",
         "makeblock-green": "#42CA24",
+        "makeblock-green-2": "#0DC088",
         "makeblock-blue": "#0074FF",
         "makeblock-blue-2": "#0C7BFF",
         "makeblock-blue-light": "#F3FAFF",
+        "makeblock-blue-light-2": "#3FB8FF",
+        "makeblock-blue-light-3": "#00BBFF",
         "makeblock-black-light": "#2A2E3A",
         "makeblock-yellow-light": "#FFFBE8",
+        "makeblock-gray-form": "#FAFAFA",
+        "makeblock-gray-form-text": "#5A5960",
       },
       screens: {
         xl: "1200px",
