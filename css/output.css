@@ -627,6 +627,20 @@ hr {
   }
 }
 
+.accordion-header.active i {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotateX(180deg);
+}
+
+.accordion-header.active svg {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
 .fixed {
   position: fixed;
 }
@@ -662,6 +676,42 @@ hr {
 
 .top-10 {
   top: 2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-14 {
+  right: 3.5rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.right-\[60px\] {
+  right: 60px;
+}
+
+.right-\[64px\] {
+  right: 64px;
+}
+
+.right-\[68px\] {
+  right: 68px;
+}
+
+.right-\[70px\] {
+  right: 70px;
+}
+
+.right-\[72px\] {
+  right: 72px;
+}
+
+.right-\[76px\] {
+  right: 76px;
 }
 
 .z-50 {
@@ -726,6 +776,10 @@ hr {
   margin-top: 0px;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -765,6 +819,10 @@ hr {
 
 .h-\[120px\] {
   height: 120px;
+}
+
+.h-\[182px\] {
+  height: 182px;
 }
 
 .w-1\/2 {
@@ -830,6 +888,10 @@ hr {
 
 .origin-top-right {
   transform-origin: top right;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -1183,6 +1245,14 @@ hr {
   transition-duration: 150ms;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1466,6 +1536,26 @@ option {
 }
 
 @media (min-width: 640px) {
+  .sm\:right-\[20\%\] {
+    right: 20%;
+  }
+
+  .sm\:right-\[18\%\] {
+    right: 18%;
+  }
+
+  .sm\:right-\[14\%\] {
+    right: 14%;
+  }
+
+  .sm\:right-\[16\%\] {
+    right: 16%;
+  }
+
+  .sm\:right-\[22\%\] {
+    right: 22%;
+  }
+
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -1560,6 +1650,38 @@ option {
 }
 
 @media (min-width: 1024px) {
+  .lg\:right-\[76px\] {
+    right: 76px;
+  }
+
+  .lg\:right-10 {
+    right: 2.5rem;
+  }
+
+  .lg\:right-14 {
+    right: 3.5rem;
+  }
+
+  .lg\:right-\[10\%\] {
+    right: 10%;
+  }
+
+  .lg\:right-\[12\%\] {
+    right: 12%;
+  }
+
+  .lg\:right-\[8\%\] {
+    right: 8%;
+  }
+
+  .lg\:right-\[9\%\] {
+    right: 9%;
+  }
+
+  .lg\:right-\[6\%\] {
+    right: 6%;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1626,6 +1748,10 @@ option {
 
   .lg\:leading-normal {
     line-height: 1.5;
+  }
+
+  .lg\:leading-none {
+    line-height: 1;
   }
 }
 

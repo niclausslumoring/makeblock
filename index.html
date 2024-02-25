@@ -5,7 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Makeblock | Home</title>
     <link rel="stylesheet" href="css/output.css" />
+    <link rel="website icon" type="png" href="temp-asset/static-asset/logo-makeblock.svg" />
   </head>
+  <style>
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slider img {
+      width: 405px;
+      height: 310px;
+    }
+
+    .dots-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #333;
+    }
+  </style>
   <body class="">
     <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
       <div class="flex sm:justify-between justify-center container items-center">
@@ -36,7 +75,7 @@
 
           <div class="flex gap-6">
             <img src="temp-asset/static-asset/search.svg" alt="" />
-            <a href="cart.html"><img src="temp-asset/static-asset/cart.svg" alt="" /></a>
+            <a href="https://www.tokopedia.com/makeblock"><img src="temp-asset/static-asset/cart.svg" alt="" /></a>
           </div>
         </div>
         <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
@@ -56,7 +95,7 @@
           <a href="index.html">
             <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Home</h3>
           </a>
-          <a href="aboutus.html">
+          <a href="about-us.html">
             <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
           </a>
           <div class="flex relative">
@@ -142,30 +181,71 @@
       </div>
     </section>
     <section class="featured__product">
-      <div class="container flex lg">
-        <div class="w-1/2">
+      <div class="container flex lg:flex-row flex-col">
+        <div class="lg:w-1/2 w-full">
           <img src="temp-asset/home/mbot-2.svg" alt="" />
         </div>
-        <div class="w-1/2 flex gap-4 flex-col">
+        <div class="lg:w-1/2 w-full flex gap-4 flex-col lg:mt-0 mt-6">
           <h3 class="text-left text-[20px] text-black font-poppinsRegular">MBOT NEO</h3>
-          <h3 class="text-left text-[36px] text-black font-poppinsMedium">Meet Our Featured Product</h3>
+          <h3 class="text-left text-[36px] text-black font-poppinsMedium lg:leading-none leading-tight">Meet Our Featured Product</h3>
           <h3 class="text-left text-[20px] text-black font-poppinsRegular">Scratch and Python Coding, kids will be able to start completely from scratch and transfer into real coding like Python with a simple click to gradually progress without changing to other software.</h3>
-          <div class="flex justify-between">
+          <div class="flex justify-between relative">
             <h3 class="text-[20px] text-black font-poppinsRegular">Friendly For Beginners</h3>
-            <h3 class="text-[20px] text-black font-poppinsRegular">92%</h3>
+            <h3 class="text-[20px] text-black font-poppinsRegular absolute top-0 sm:right-[18%] lg:right-[10%] right-0">92%</h3>
           </div>
-          <div class="flex justify-between">
-            <h3 class="text-[20px] text-black font-poppinsRegular">Friendly For Beginners</h3>
-            <h3 class="text-[20px] text-black font-poppinsRegular">92%</h3>
+          <div class="relative sm:block hidden">
+            <img src="temp-asset/home/beginer-oren.svg" class="absolute" alt="" />
+            <img src="temp-asset/home/abu.svg" alt="" />
           </div>
-          <div class="flex justify-between">
-            <h3 class="text-[20px] text-black font-poppinsRegular">Friendly For Beginners</h3>
-            <h3 class="text-[20px] text-black font-poppinsRegular">92%</h3>
+          <div class="flex justify-between relative">
+            <h3 class="text-[20px] text-black font-poppinsRegular">APP Remote Control App</h3>
+            <h3 class="text-[20px] text-black font-poppinsRegular absolute top-0 sm:right-[22%] lg:right-[12%] right-0">90%</h3>
+          </div>
+          <div class="relative sm:block hidden">
+            <img src="temp-asset/home/app-oren.svg" class="absolute" alt="" />
+            <img src="temp-asset/home/abu.svg" alt="" />
+          </div>
+          <div class="flex justify-between relative">
+            <h3 class="text-[20px] text-black font-poppinsRegular">Stable Wi-Fi Connectivity</h3>
+            <h3 class="text-[20px] text-black font-poppinsRegular absolute top-0 sm:right-[16%] lg:right-[6%] right-0">95%</h3>
+          </div>
+          <div class="relative sm:block hidden">
+            <img src="temp-asset/home/wifi.svg" class="absolute" alt="" />
+            <img src="temp-asset/home/abu.svg" alt="" />
+          </div>
+          <div class="flex mt-6 gap-10 items-center">
+            <a href="https://www.tokopedia.com/makeblock">
+              <button class="py-2 px-3 warranty__box w-fit hover:scale-105">
+                <h3 class="text-white font-poppinsSemiBold uppercase text-[20px] text-center">buy now</h3>
+              </button>
+            </a>
+            <a href="https://www.youtube.com/watch?v=pSgeQBtDIgY">
+              <img src="temp-asset/home/play-neo.svg" class="hover:scale-105" alt="" />
+            </a>
           </div>
         </div>
       </div>
     </section>
-
+    <section class="slider">
+      <div class="container">
+        <h3 class="text-center uppercase font-poppinsRegular text-black text-[20px]">Family fun</h3>
+        <h3 class="text-center uppercase font-poppinsMedium text-black text-[36px] mt-2">steam coding toys</h3>
+        <div class="slider-container">
+          <div class="slider">
+            <img src="temp-asset/home/slider/printer.svg" alt="" />
+            <img src="temp-asset/home/slider/codey.svg" alt="" />
+            <img src="temp-asset/home/slider/mtiny.svg" alt="" />
+            <img src="temp-asset/home/slider/make.svg" alt="" />
+          </div>
+          <div class="dots-container"></div>
+        </div>
+      </div>
+    </section>
+    <section class="software">
+      <div class="container grid grid-cols-2 gap-6">
+        <div></div>
+      </div>
+    </section>
     <footer class="bg-makeblock-black-light">
       <div class="container flex lg:justify-between justify-center items-center lg:flex-row flex-col">
         <div class="flex justify-center lg:gap-12 gap-6 sm:h-[300px] h-fit sm:flex-row flex-col w-full">
@@ -223,6 +303,8 @@
     </footer>
   </body>
   <script src="js/contact-us.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slider-home.js"></script>
   <script src="js/header.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/popup.js"></script>
