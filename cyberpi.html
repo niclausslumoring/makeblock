@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeblock | Cyberpi Innovation Add on pack</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="website icon" type="png" href="temp-asset/static-asset/logo-makeblock.svg" />
+  </head>
+  <body class="">
+    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
+      <div class="flex sm:justify-between justify-center container items-center">
+        <div class="flex items-center justify-center">
+          <img src="temp-asset/static-asset/logo-makeblock.svg" class="md:w-full w-[80%]" alt="" />
+        </div>
+        <div class="gap-10 items-center justify-center sm:flex hidden">
+          <a href="index.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
+          <a href="about-us.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold aboutUsActive">About Us</h1></a>
+          <div class="flex relative">
+            <h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer" onclick="toggleDropdownDesktop()">Partners</h1>
+            <svg id="dropdownArrowDesktop" xmlns="http://www.w3.org/2000/svg" class="transition-all ease-in-out duration-300 3xl:w-6 w-5 hover:cursor-pointer" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            <div id="partnerDropdownDesktop" class="absolute top-10 left-0 w-[170px] bg-white shadow-xl pl-2 hidden partner__dropdown">
+              <a href="school-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">School</h1></a>
+              <a href="reseller-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">Reseller</h1></a>
+              <a href="education-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">Education Partner</h1></a>
+            </div>
+          </div>
+
+          <a href="products.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold productsActive">Products</h1></a>
+          <a href="article.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold articleActive">Article</h1></a>
+          <div>
+            <a href="warranty.html"><h1 class="font-poppinsRegular text-white text-[16px] hover:font-poppinsBold warrantyActive px-2 py-1 warranty__box">Warranty</h1></a>
+          </div>
+
+          <div class="flex gap-6">
+            <img src="temp-asset/static-asset/search.svg" alt="" />
+            <a href="https://www.tokopedia.com/makeblock"><img src="temp-asset/static-asset/cart.svg" alt="" /></a>
+          </div>
+        </div>
+        <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-top-right ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-bottom-right ease-in-out duration-300"></span>
+        </button>
+        <button class="hidden burger-menu-close z-[120] fixed right-0 top-0" onclick="closeBurgerPopup()">
+          <div>
+            <img src="temp-asset/static-asset/close.svg" class="w-12" alt="" />
+          </div>
+        </button>
+      </div>
+
+      <div class="burger-menu-popup hidden w-full fixed h-full top-0 right-0 z-[100]" id="popupBurger">
+        <div class="flex flex-col absolute top-0 w-full items-center container h-full gap-12 py-12 justify-center" style="background-color: rgba(256, 256, 256, 0.85)">
+          <a href="index.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Home</h3>
+          </a>
+          <a href="about-us.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
+          </a>
+          <div class="flex relative">
+            <h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer" onclick="toggleDropdown()">Partners</h1>
+            <svg id="dropdownArrow" xmlns="http://www.w3.org/2000/svg" class="transition-all ease-in-out duration-300 3xl:w-6 w-5 hover:cursor-pointer" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            <div id="partnerDropdown" class="absolute top-10 left-0 w-[170px] bg-white shadow-xl pl-2 hidden partner__dropdown py-2">
+              <a href="school-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer">School</h1></a>
+              <a href="reseller-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer mt-3">Reseller</h1></a>
+              <a href="education-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer mt-3">Education Partner</h1></a>
+            </div>
+          </div>
+          <a href="products.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Products</h3>
+          </a>
+          <a href="article.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Article</h3>
+          </a>
+          <a href="warranty.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Warranty</h3>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="container flex flex-col gap-6">
+        <button class="py-2 px-3 warranty__box w-fit">
+          <a href="products.html"><h3 class="text-white font-poppinsSemiBold text-[20px] text-center">< Back</h3></a>
+        </button>
+        <div class="flex gap-6 lg:flex-row flex-col">
+          <img src="temp-asset/product-detail/cyberpi.svg" alt="" />
+          <div class="flex flex-col gap-10">
+            <div class="flex sm:flex-row flex-col gap-6 sm:items-center items-start">
+              <h3 class="text-black text-[48px] font-poppinsBold sm:leading-none leading-tight">Cyberpi Innovation <br />Add on pack</h3>
+              <button class="py-2 px-6 bg-makeblock-blue-light-2 rounded-xl w-fit">
+                <a href="https://www.youtube.com/watch?si=7MeXx8rjjulbn1vu&v=7kDcb2GHGAA&feature=youtu.be"><h3 class="text-white font-poppinsSemiBold text-[20px] text-center">Watch Video</h3></a>
+              </button>
+            </div>
+            <h3 class="text-[20px] text-black font-poppinsRegular">
+              CyberPi Innovation Add-on Pack, specially designed for AIoT and Python education and robot competitions, comes with various sensors and hardware components. The pack includes mBuild modules and electronic components, meeting the additional needs of students or teachers for sensors
+              while they’re learning computer science and technology.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features bg-makeblock-blue-light-3" style="padding-bottom: 64px !important; margin-bottom: 0 !important">
+      <div class="container flex justify-center flex-col items-center gap-6">
+        <h3 class="text-white text-shadow text-[48px] font-poppinsBold sm:leading-none leading-tight sm:text-left text-center">Key Features</h3>
+        <div class="flex gap-6 justify-center items-center mt-10 lg:flex-row flex-col">
+          <div class="flex flex-col gap-6 bg-white rounded-xl shadow-xl border border-makeblock-gray-light px-6 py-6 sm:w-[275px] w-full h-[244px]">
+            <h3 class="text-black text-[24px] font-poppinsBold text-center">Motor Pack</h3>
+            <h3 class="text-black text-[12px] font-poppinsRegular leading-none">It can be used to create simple carts and wheeled structures, such as automatic curtain machines, to bring basic mobility to projects</h3>
+          </div>
+          <div class="flex flex-col gap-6 bg-white rounded-xl shadow-xl border border-makeblock-gray-light px-6 py-6 sm:w-[275px] w-full h-[244px]">
+            <h3 class="text-black text-[24px] font-poppinsBold text-center">Servo Pack</h3>
+            <h3 class="text-black text-[12px] font-poppinsRegular leading-none">It’s used to bring precise control to projects, such as controlling car steering, flexing of a robot, close/open mechanisms (smart trash cans, smart door locks, etc.)</h3>
+          </div>
+          <div class="flex flex-col gap-6 bg-white rounded-xl shadow-xl border border-makeblock-gray-light px-6 py-6 sm:w-[275px] w-full h-[244px]">
+            <h3 class="text-black text-[24px] font-poppinsBold text-center">LED Strip Pack</h3>
+            <h3 class="text-black text-[12px] font-poppinsRegular leading-none">Add dazzling light effects to projects, like a twinkling Christmas tree.</h3>
+          </div>
+          <div class="flex flex-col gap-6 bg-white rounded-xl shadow-xl border border-makeblock-gray-light px-6 py-6 sm:w-[275px] w-full h-[244px]">
+            <h3 class="text-black text-[24px] font-poppinsBold text-center">Ultrasonic Sensor</h3>
+            <h3 class="text-black text-[12px] font-poppinsRegular leading-none">Enable control over hardware projects without touching them. A necessary component in projects like smart trash cans and automatic barrier gates, and also a powerful extension for DIY cars.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-makeblock-black-light">
+      <div class="container flex lg:justify-between justify-center items-center lg:flex-row flex-col">
+        <div class="flex justify-center lg:gap-12 gap-6 sm:h-[300px] h-fit sm:flex-row flex-col w-full">
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">About</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Services</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Contact Us</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Join MakeX</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">News Center</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">News</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Media Coverage</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Big Events</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Office Blog</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">Product Support</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Accessories & Others</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Warranty</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">After Sales Contact</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Makeblock Forum</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">Purchase</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Online Store</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Find Store</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 sm:h-[300px] h-fit sm:mt-0 mt-6">
+          <div class="flex flex-col gap-6 lg:justify-end justify-center">
+            <h3 class="text-white text-[16px] font-poppinsMedium lg:text-end text-center">Let’s Connect on Social Platform !</h3>
+            <div class="flex gap-6 lg:justify-end justify-center">
+              <img src="temp-asset/static-asset/youtube.svg" alt="" />
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-6 lg:justify-end justify-center">
+            <h3 class="text-white text-[16px] font-poppinsMedium lg:text-end text-center">Subscribe to get News Update !</h3>
+            <div class="flex sm:flex-row flex-col gap-2 lg:justify-end justify-center">
+              <input type="email" class="text-makeblock-gray w-[300px] pl-3 rounded-lg py-2" placeholder="Email Address" />
+              <button class="bg-makeblock-gray-light rounded-lg w-[100px] px-2"><h3 class="text-white uppercase text-[12px] font-poppinsSemiBold">Subscribe</h3></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/contact-us.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/popup.js"></script>
+</html>
