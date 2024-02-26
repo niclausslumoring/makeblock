@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeblock | Article</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="website icon" type="png" href="temp-asset/static-asset/logo-makeblock.svg" />
+  </head>
+  <body class="">
+    <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
+      <div class="flex sm:justify-between justify-center container items-center">
+        <div class="flex items-center justify-center">
+          <img src="temp-asset/static-asset/logo-makeblock.svg" class="md:w-full w-[80%]" alt="" />
+        </div>
+        <div class="gap-10 items-center justify-center sm:flex hidden">
+          <a href="index.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
+          <a href="about-us.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold aboutUsActive">About Us</h1></a>
+          <div class="flex relative">
+            <h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer" onclick="toggleDropdownDesktop()">Partners</h1>
+            <svg id="dropdownArrowDesktop" xmlns="http://www.w3.org/2000/svg" class="transition-all ease-in-out duration-300 3xl:w-6 w-5 hover:cursor-pointer" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            <div id="partnerDropdownDesktop" class="absolute top-10 left-0 w-[170px] bg-white shadow-xl pl-2 hidden partner__dropdown">
+              <a href="school-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">School</h1></a>
+              <a href="reseller-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">Reseller</h1></a>
+              <a href="education-partner.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold partnersActive hover:cursor-pointer">Education Partner</h1></a>
+            </div>
+          </div>
+
+          <a href="products.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold productsActive">Products</h1></a>
+          <a href="article.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold articleActive">Article</h1></a>
+          <div>
+            <a href="warranty.html"><h1 class="font-poppinsRegular text-white text-[16px] hover:font-poppinsBold warrantyActive px-2 py-1 warranty__box">Warranty</h1></a>
+          </div>
+
+          <div class="flex gap-6">
+            <img src="temp-asset/static-asset/search.svg" alt="" />
+            <a href="https://www.tokopedia.com/makeblock"><img src="temp-asset/static-asset/cart.svg" alt="" /></a>
+          </div>
+        </div>
+        <button id="burgerButton" class="sm:hidden flex flex-col gap-1 items-center justify-center burger-menu-button cursor-pointer" onclick="toggleBurgerPopup()">
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-top-right ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all ease-in-out duration-300"></span>
+          <span class="w-9 h-1 rounded-full bg-black transition-all origin-bottom-right ease-in-out duration-300"></span>
+        </button>
+        <button class="hidden burger-menu-close z-[120] fixed right-0 top-0" onclick="closeBurgerPopup()">
+          <div>
+            <img src="temp-asset/static-asset/close.svg" class="w-12" alt="" />
+          </div>
+        </button>
+      </div>
+
+      <div class="burger-menu-popup hidden w-full fixed h-full top-0 right-0 z-[100]" id="popupBurger">
+        <div class="flex flex-col absolute top-0 w-full items-center container h-full gap-12 py-12 justify-center" style="background-color: rgba(256, 256, 256, 0.85)">
+          <a href="index.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Home</h3>
+          </a>
+          <a href="about-us.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">About Us</h3>
+          </a>
+          <div class="flex relative">
+            <h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer" onclick="toggleDropdown()">Partners</h1>
+            <svg id="dropdownArrow" xmlns="http://www.w3.org/2000/svg" class="transition-all ease-in-out duration-300 3xl:w-6 w-5 hover:cursor-pointer" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            <div id="partnerDropdown" class="absolute top-10 left-0 w-[170px] bg-white shadow-xl pl-2 hidden partner__dropdown py-2">
+              <a href="school-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer">School</h1></a>
+              <a href="reseller-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer mt-3">Reseller</h1></a>
+              <a href="education-partner.html"><h1 class="font-poppinsRegular text-black text-[24px] hover:font-poppinsBold partnersActive hover:cursor-pointer mt-3">Education Partner</h1></a>
+            </div>
+          </div>
+          <a href="products.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Products</h3>
+          </a>
+          <a href="article.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Article</h3>
+          </a>
+          <a href="warranty.html">
+            <h3 class="font-outfitRegular text-cyberspace-orange hover:font-poppinsBold cursor-pointer text-[24px] text-shadow">Warranty</h3>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="container flex flex-col gap-6">
+        <div class="flex gap-6 sm:flex-row flex-col">
+          <img src="temp-asset/article/1.svg" class="lg:w-[30%] w-full" alt="" />
+          <div class="flex flex-col gap-2 lg:w-1/2 w-full">
+            <h3 class="font-poppinsSemiBold text-black text-[20px]">Pelatihan UNICAMP Ajarkan Puluhan Tenaga Pengajar Melek Perkembangan Teknologi</h3>
+            <h3 class="text-makeblock-gray-text text-[12px] font-poppinsMedium">20/07/2023</h3>
+            <h3 class="text-makeblock-gray-text text-[16px] font-poppinsRegular">CEO PT Joindo Eka Handal, Erwin Octavia, membuka pelatihan Unicamp 2023 di Putri Duyung Cottage Ancol...</h3>
+            <a href="https://www.infoindonesia.id/info-gadget-tekno/9619537951/hebat-pelatihan-unicamp-2023-ajarkan-puluhan-tenaga-pengajar-melek-perkembangan-teknologi-demi-majukan-bangsa?page=2"><h3 class="text-makeblock-blue-link text-[16px] uppercase font-poppinsRegular mt-2">read more</h3></a>
+          </div>
+        </div>
+        <hr class="border-[#EAE6E6] border-[1px]" />
+        <div class="flex gap-6 sm:flex-row flex-col">
+          <img src="temp-asset/article/2.svg" class="lg:w-[30%] w-full" alt="" />
+          <div class="flex flex-col gap-2 lg:w-1/2 w-full">
+            <h3 class="font-poppinsSemiBold text-black text-[20px]">Ajarkan Penyelesaian Maslaah melalui Kompetisi Robotik</h3>
+            <h3 class="text-makeblock-gray-text text-[12px] font-poppinsMedium">23/09/2023</h3>
+            <h3 class="text-makeblock-gray-text text-[16px] font-poppinsRegular">Mengajarkan anak-anak untuk menyelesaikan permasalahan tentu bisa dilakukan dengan cara yang beragam...</h3>
+            <a href="https://tv.republika.co.id/berita/s1fio2418/ajarkan-penyelesaian-masalah-kepada-anak-melalui-kompetisi-robotik"><h3 class="text-makeblock-blue-link text-[16px] uppercase font-poppinsRegular mt-2">read more</h3></a>
+          </div>
+        </div>
+        <hr class="border-[#EAE6E6] border-[1px]" />
+        <div class="flex gap-6 sm:flex-row flex-col">
+          <img src="temp-asset/article/3.svg" class="lg:w-[30%] w-full" alt="" />
+          <div class="flex flex-col gap-2 lg:w-1/2 w-full">
+            <h3 class="font-poppinsSemiBold text-black text-[20px]">Tim Robotik SD Tarakanita 4 Mengikuti Perhelatan Akbar Kontes Robot Dunia</h3>
+            <h3 class="text-makeblock-gray-text text-[12px] font-poppinsMedium">16/12/2023</h3>
+            <h3 class="text-makeblock-gray-text text-[16px] font-poppinsRegular">Untuk yang ke sekian kalinya, MakeX kembali menggelar 2023 MakeX Robotics World Competition Championship di Yantai, Tiongkok...</h3>
+            <a href="https://sd4-jkt.tarakanita.sch.id/detail_news/tim-robotik-sd-tarakanita-4-mengikuti-perhelatan-akbar-kontes-robotik-dunia"><h3 class="text-makeblock-blue-link text-[16px] uppercase font-poppinsRegular mt-2">read more</h3></a>
+          </div>
+        </div>
+        <hr class="border-[#EAE6E6] border-[1px]" />
+        <div class="flex gap-6 sm:flex-row flex-col">
+          <img src="temp-asset/article/4.svg" class="lg:w-[30%] w-full" alt="" />
+          <div class="flex flex-col gap-2 lg:w-1/2 w-full">
+            <h3 class="font-poppinsSemiBold text-black text-[20px]">Kompetisi Robot MAKEX 2023 Jakarta: Merajut Teknologi dan Bakat Terbaik Generasi Muda</h3>
+            <h3 class="text-makeblock-gray-text text-[12px] font-poppinsMedium">21/09/2023</h3>
+            <h3 class="text-makeblock-gray-text text-[16px] font-poppinsRegular">Kompetisi Robotik "MAKEX 2023" kali ini sedikit berbeda dari yang...</h3>
+            <a href="https://www.netitalk.com/news/101210241626/kompetisi-robot-makex-2023-jakarta-merajut-teknologi-dan-bakat-terbaik-generasi-muda"><h3 class="text-makeblock-blue-link text-[16px] uppercase font-poppinsRegular mt-2">read more</h3></a>
+          </div>
+        </div>
+        <hr class="border-[#EAE6E6] border-[1px]" />
+        <div class="flex gap-6 sm:flex-row flex-col">
+          <img src="temp-asset/article/5.svg" class="lg:w-[30%] w-full" alt="" />
+          <div class="flex flex-col gap-2 lg:w-1/2 w-full">
+            <h3 class="font-poppinsSemiBold text-black text-[20px]">Tingkatkan Edukator Guru Dalam Ilmu Teknologi, PT. Joindo Eka Handal Gelar UNICAMP 2023</h3>
+            <h3 class="text-makeblock-gray-text text-[12px] font-poppinsMedium">01/08/2021</h3>
+            <h3 class="text-makeblock-gray-text text-[16px] font-poppinsRegular">50 guru yang berasal dari 20 sekolah di Indonesia dan Malaysia mendapatkan pelatihan dan pengayaan penerapan teknologi...</h3>
+            <a href="https://disway.id/read/714977/tingkatkan-edukator-guru-dalam-ilmu-teknologi-pt-joindo-eka-handal-gelar-unicamp-2023"><h3 class="text-makeblock-blue-link text-[16px] uppercase font-poppinsRegular mt-2">read more</h3></a>
+          </div>
+        </div>
+        <hr class="border-[#EAE6E6] border-[1px]" />
+        <div class="flex gap-6 sm:flex-row flex-col">
+          <img src="temp-asset/article/6.svg" class="lg:w-[30%] w-full" alt="" />
+          <div class="flex flex-col gap-2 lg:w-1/2 w-full">
+            <h3 class="font-poppinsSemiBold text-black text-[20px]">Seri Perdana MAKEX 2023 Robotic Competition Diadakan di Bina Bangsa School Semarang</h3>
+            <h3 class="text-makeblock-gray-text text-[12px] font-poppinsMedium">31/08/2023</h3>
+            <h3 class="text-makeblock-gray-text text-[16px] font-poppinsRegular">Make X Indonesia dan Bina Bangsa School Semarang, menyelenggarakan MAKEX 2023 Robotic Competition...</h3>
+            <a href="https://wawasan.co/news/detail/20971/seri-perdana-makex-2023-robotic-competition-diadakan-di-bina-bangsa-school-semarang"><h3 class="text-makeblock-blue-link text-[16px] uppercase font-poppinsRegular mt-2">read more</h3></a>
+          </div>
+        </div>
+        <hr class="border-[#EAE6E6] border-[1px]" />
+      </div>
+    </section>
+    <footer class="bg-makeblock-black-light">
+      <div class="container flex lg:justify-between justify-center items-center lg:flex-row flex-col">
+        <div class="flex justify-center lg:gap-12 gap-6 sm:h-[300px] h-fit sm:flex-row flex-col w-full">
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">About</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Services</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Contact Us</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Join MakeX</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">News Center</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">News</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Media Coverage</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Big Events</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Office Blog</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">Product Support</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Accessories & Others</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Warranty</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">After Sales Contact</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Makeblock Forum</h3>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">Purchase</h1>
+            <div class="mt-14 flex flex-col">
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Online Store</h3>
+              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Find Store</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 sm:h-[300px] h-fit sm:mt-0 mt-6">
+          <div class="flex flex-col gap-6 lg:justify-end justify-center">
+            <h3 class="text-white text-[16px] font-poppinsMedium lg:text-end text-center">Let’s Connect on Social Platform !</h3>
+            <div class="flex gap-6 lg:justify-end justify-center">
+              <img src="temp-asset/static-asset/youtube.svg" alt="" />
+              <img src="temp-asset/static-asset/ig.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-6 lg:justify-end justify-center">
+            <h3 class="text-white text-[16px] font-poppinsMedium lg:text-end text-center">Subscribe to get News Update !</h3>
+            <div class="flex sm:flex-row flex-col gap-2 lg:justify-end justify-center">
+              <input type="email" class="text-makeblock-gray w-[300px] pl-3 rounded-lg py-2" placeholder="Email Address" />
+              <button class="bg-makeblock-gray-light rounded-lg w-[100px] px-2"><h3 class="text-white uppercase text-[12px] font-poppinsSemiBold">Subscribe</h3></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/contact-us.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/popup.js"></script>
+</html>

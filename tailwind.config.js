@@ -8,16 +8,9 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        "homepage-banner": "url('../temp-asset/homepage/bg-homepage-1.png')",
-        "faq-banner": "url('../temp-asset/faq/banner.svg')",
-        "about-us-banner": "url('../temp-asset/about-us/banner.svg')",
-        "course-banner": "url('../temp-asset/course/banner.svg')",
-        "partnership-banner": "url('../temp-asset/partnership/banner.svg')",
-        "partnership-oval": "url('../temp-asset/partnership/oval.svg')",
-        "school-partnership": "url('../temp-asset/partnership/school/banner.svg')",
-        "affiliate-partnership": "url('../temp-asset/partnership/affiliate/banner.svg')",
-        "program-partnership": "url('../temp-asset/partnership/program/banner.svg')",
         "latest-1": "url('../temp-asset/static-asset/latest-1.svg')",
+        "latest-2": "url('../temp-asset/static-asset/latest-2.svg')",
+        "latest-3": "url('../temp-asset/static-asset/latest-3.svg')",
       },
 
       fontFamily: {
@@ -45,10 +38,12 @@ module.exports = {
         "makeblock-blue-light": "#F3FAFF",
         "makeblock-blue-light-2": "#3FB8FF",
         "makeblock-blue-light-3": "#00BBFF",
+        "makeblock-blue-link": "#3762CC",
         "makeblock-black-light": "#2A2E3A",
         "makeblock-yellow-light": "#FFFBE8",
         "makeblock-gray-form": "#FAFAFA",
         "makeblock-gray-form-text": "#5A5960",
+        "makeblock-gray-text": "#6C7793",
       },
       screens: {
         xl: "1200px",
