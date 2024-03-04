@@ -21,12 +21,6 @@ if (pageName === "products.html") {
   });
 }
 
-if (pageName === "warranty.html") {
-  document.querySelectorAll(".warrantyActive").forEach(function (element) {
-    element.classList.add("Navlink-Active");
-  });
-}
-
 if (pageName === "index.html") {
   document.querySelectorAll(".homeActive").forEach(function (element) {
     element.classList.add("Navlink-Active");

@@ -6,50 +6,18 @@
     <title>Makeblock | Home</title>
     <link rel="stylesheet" href="css/output.css" />
     <link rel="website icon" type="png" href="temp-asset/static-asset/logo-makeblock.svg" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
-  <style>
-    .slider-container {
-      position: relative;
-      overflow: hidden;
-    }
 
-    .slider {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
-
-    .slider img {
-      width: 405px;
-      height: 310px;
-    }
-
-    .dots-container {
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      background-color: #bbb;
-      border-radius: 50%;
-      margin: 0 5px;
-      cursor: pointer;
-    }
-
-    .dot.active {
-      background-color: #333;
-    }
-  </style>
   <body class="">
     <header class="transition-all ease-in-out duration-300 fixed top-0 inset-x-0 z-50 nav-bg-Gradient">
       <div class="flex sm:justify-between justify-center container items-center">
         <div class="flex items-center justify-center">
-          <img src="temp-asset/static-asset/logo-makeblock.svg" class="md:w-full w-[80%]" alt="" />
+          <a href="index.html"><img src="temp-asset/static-asset/logo-makeblock.svg" class="md:w-full w-[80%]" alt="" /></a>
         </div>
         <div class="gap-10 items-center justify-center sm:flex hidden">
           <a href="index.html"><h1 class="font-poppinsRegular text-black text-[16px] hover:font-poppinsBold homeActive">Home</h1></a>
@@ -74,7 +42,6 @@
           </div>
 
           <div class="flex gap-6">
-            <img src="temp-asset/static-asset/search.svg" alt="" />
             <a href="https://www.tokopedia.com/makeblock"><img src="temp-asset/static-asset/cart.svg" alt="" /></a>
           </div>
         </div>
@@ -226,18 +193,17 @@
         </div>
       </div>
     </section>
-    <section class="slider">
+    <section class="sliderss">
       <div class="container">
         <h3 class="text-center uppercase font-poppinsRegular text-black text-[20px]">Family fun</h3>
-        <h3 class="text-center uppercase font-poppinsMedium text-black text-[36px] mt-2">steam coding toys</h3>
-        <div class="slider-container">
-          <div class="slider">
-            <img src="temp-asset/home/slider/printer.svg" alt="" />
-            <img src="temp-asset/home/slider/codey.svg" alt="" />
-            <img src="temp-asset/home/slider/mtiny.svg" alt="" />
-            <img src="temp-asset/home/slider/make.svg" alt="" />
+        <h3 class="text-center uppercase font-poppinsMedium text-black text-[36px] mt-2 sm:leading-none leading-tight">steam coding toys</h3>
+        <div class="container mx-auto">
+          <div class="responsive">
+            <img src="temp-asset/home/slider/printer.svg" class="lg:w-[416px] w-full p-3 object-fill lg:h-[310px] h-full" alt="" />
+            <img src="temp-asset/home/slider/codey.svg" class="lg:w-[416px] w-full p-3 object-fill lg:h-[310px] h-full" alt="" />
+            <img src="temp-asset/home/slider/mtiny.svg" class="lg:w-[416px] w-full p-3 object-fill lg:h-[310px] h-full" alt="" />
+            <img src="temp-asset/home/slider/make.svg" class="lg:w-[416px] w-full p-3 object-fill ;lg:h-[310px] h-full" alt="" />
           </div>
-          <div class="dots-container"></div>
         </div>
       </div>
     </section>
@@ -344,24 +310,25 @@
         </a>
       </div>
     </section>
+    <section class="review"></section>
     <footer class="bg-makeblock-black-light">
       <div class="container flex lg:justify-between justify-center items-center lg:flex-row flex-col">
         <div class="flex justify-center lg:gap-12 gap-6 sm:h-[300px] h-fit sm:flex-row flex-col w-full">
           <div class="flex flex-col">
             <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">About</h1>
             <div class="mt-14 flex flex-col">
-              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Services</h3>
-              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Contact Us</h3>
-              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Join MakeX</h3>
+              <a href="school-partner.html"><h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Services</h3> </a>
+              <a href="contact.html"><h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Contact Us</h3></a>
+              <a href="https://www.instagram.com/makexindonesia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"><h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Join MakeX</h3></a>
             </div>
           </div>
           <div class="flex flex-col">
             <h1 class="text-white font-poppinsMedium text-[24px] sm:text-start text-center h-[40px]">News Center</h1>
             <div class="mt-14 flex flex-col">
-              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">News</h3>
-              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Media Coverage</h3>
-              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Big Events</h3>
-              <h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Office Blog</h3>
+              <a href="article.html"><h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">News</h3> </a>
+              <a href="school-partner.html"><h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Media Coverage</h3></a>
+              <a href="school-partner.html"><h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Big Events</h3> </a>
+              <a href="school-partner.html"><h3 class="text-white font-poppinsRegular text-[16px] sm:text-start text-center">Office Blog</h3> </a>
             </div>
           </div>
           <div class="flex flex-col">
@@ -401,10 +368,44 @@
     </footer>
   </body>
   <script src="js/contact-us.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slider-home.js"></script>
   <script src="js/header.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/form-home.js"></script>
   <script src="js/popup.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".responsive").slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        nav: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    });
+  </script>
 </html>
