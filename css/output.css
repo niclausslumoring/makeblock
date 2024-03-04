@@ -1768,6 +1768,14 @@ option {
   font-family: poppinsBold;
 }
 
+.hover\:font-poppinsSemiBold:hover {
+  font-family: poppinsSemiBold;
+}
+
+.hover\:font-poppinsMedium:hover {
+  font-family: poppinsMedium;
+}
+
 @media (min-width: 640px) {
   .sm\:right-\[16\%\] {
     right: 16%;
