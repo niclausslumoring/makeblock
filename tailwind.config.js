@@ -11,6 +11,7 @@ module.exports = {
         "latest-1": "url('../temp-asset/static-asset/latest-1.svg')",
         "latest-2": "url('../temp-asset/static-asset/latest-2.svg')",
         "latest-3": "url('../temp-asset/static-asset/latest-3.svg')",
+        "kanan": "url('../temp-asset/static-asset/bg-pesan-2.svg')",
       },
 
       fontFamily: {
