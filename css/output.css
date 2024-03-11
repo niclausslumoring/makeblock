@@ -993,6 +993,10 @@ hr {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -1408,6 +1412,11 @@ hr {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-makeblock-gray-form-text {
+  --tw-text-opacity: 1;
+  color: rgb(90 89 96 / var(--tw-text-opacity));
 }
 
 .shadow-none {

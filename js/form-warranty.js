@@ -4,8 +4,9 @@ function checkInputs() {
   var email = document.getElementById("Email").value;
   var whatsapp = document.getElementById("Whatsapp").value;
   var serial = document.getElementById("Serial").value;
+  var fileInput = document.getElementById("myFile").value; // Menambahkan pengecekan input file
 
-  var allInputsFilled = fullName !== "" && institution !== "" && email !== "" && whatsapp !== "" && serial !== "";
+  var allInputsFilled = fullName !== "" && institution !== "" && email !== "" && whatsapp !== "" && serial !== "" && fileInput !== ""; // Menambahkan kondisi untuk input file
 
   if (allInputsFilled) {
     document.getElementById("submitButton").classList.add("warranty__box");
@@ -22,3 +23,4 @@ document.getElementById("Institution").addEventListener("input", checkInputs);
 document.getElementById("Email").addEventListener("input", checkInputs);
 document.getElementById("Whatsapp").addEventListener("input", checkInputs);
 document.getElementById("Serial").addEventListener("input", checkInputs);
+document.getElementById("myFile").addEventListener("change", checkInputs); // Menambahkan event listener untuk input file
